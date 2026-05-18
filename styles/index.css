@@ -1,0 +1,223 @@
+/* ─────────────────────────────────────────────────────────────
+   Theme: Vue-inspired dark, sans-serif, with Material code palette
+   ───────────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap');
+
+:root {
+  /* Vue brand (sampled from vuejs.org) */
+  --vue-green: #42b883;
+  --vue-green-light: #42d392;
+  --vue-green-dark: #33a06f;
+  --vue-blue: #647eff;
+  --vue-navy: #213547;
+
+  /* Dark theme surfaces */
+  --bg-base: #0a0e13;
+  --bg-elev-1: #141b25;
+  --bg-elev-2: #1c2632;
+  --border: #293548;
+  --border-soft: #1f2937;
+
+  /* Text */
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #8896a8;
+  --text-faint: #475569;
+
+  /* Material code accents (reference colors used in custom classes) */
+  --code-yellow: #ffcb6b;
+  --code-red: #f07178;
+  --code-green: #c3e88d;
+  --code-blue: #82aaff;
+  --code-purple: #c792ea;
+  --code-cyan: #89ddff;
+  --code-orange: #f78c6c;
+
+  /* Font stacks */
+  --font-display: 'Bricolage Grotesque', 'DM Sans', system-ui, sans-serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Slidev built-in overrides */
+  --slidev-theme-primary: var(--vue-green-light);
+  --slidev-code-background: var(--bg-elev-1);
+  --slidev-code-line-numbers-color: var(--text-faint);
+}
+
+/* ── Base ─────────────────────────────────────────────────── */
+
+html,
+html.dark,
+body,
+#app {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+.slidev-layout {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+/* ── Headings ─────────────────────────────────────────────── */
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.slidev-layout h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.slidev-layout h2 {
+  font-size: 2.5rem;
+}
+
+.slidev-layout h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+/* ── The signature Vue green→indigo gradient ──────────────────
+   Wrap focal text in <span class="grad">…</span>
+   (Used on the cover, and reusable on any emphasis word later.) */
+
+.grad,
+.slidev-layout .grad {
+  background: linear-gradient(110deg, var(--vue-green-light) 0%, var(--vue-blue) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  /* a hair of glow so it reads on the dark base */
+  filter: drop-shadow(0 0 16px rgba(66, 211, 146, 0.18));
+}
+
+/* Cover layout polish */
+.slidev-layout.cover h1 {
+  font-size: 5rem;
+  line-height: 1.05;
+}
+
+.slidev-layout.cover {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/* ── Body text ────────────────────────────────────────────── */
+
+.slidev-layout p {
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.slidev-layout strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.slidev-layout em {
+  color: var(--vue-green-light);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* ── Links ────────────────────────────────────────────────── */
+
+.slidev-layout a {
+  color: var(--vue-green-light);
+  text-decoration: none;
+  border-bottom: 1px dashed color-mix(in srgb, var(--vue-green-light) 35%, transparent);
+  transition: color 120ms ease, border-color 120ms ease;
+}
+
+.slidev-layout a:hover {
+  color: var(--vue-green);
+  border-bottom-color: var(--vue-green);
+}
+
+/* ── Code blocks ──────────────────────────────────────────── */
+
+.slidev-layout pre,
+.slidev-layout .slidev-code {
+  font-family: var(--font-mono);
+  background: var(--bg-elev-1) !important;
+  border: 1px solid var(--border-soft);
+  border-radius: 0.6rem;
+  padding: 1.1rem 1.25rem;
+  font-size: 0.95em;
+  line-height: 1.55;
+}
+
+.slidev-layout :not(pre) > code {
+  font-family: var(--font-mono);
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-2) 88%, var(--vue-green) 12%) 0%,
+      var(--bg-elev-2) 100%);
+  color: var(--code-cyan);
+  padding: 0.18em 0.55em;
+  border-radius: 0.35em;
+  font-size: 0.88em;
+  font-weight: 500;
+  border: 1px solid color-mix(in srgb, var(--code-cyan) 32%, var(--border));
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--code-cyan) 10%, transparent),
+    0 0 14px color-mix(in srgb, var(--code-cyan) 18%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 6%, transparent);
+  text-shadow: 0 0 8px color-mix(in srgb, var(--code-cyan) 35%, transparent);
+}
+
+/* ── Quote blocks ─────────────────────────────────────────── */
+
+.slidev-layout blockquote {
+  border-left: 3px solid var(--vue-green);
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  margin: 1.25rem 0;
+  color: var(--text-secondary);
+  font-style: italic;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--vue-green) 6%, transparent), transparent);
+}
+
+/* ── Horizontal rule as an accent line ────────────────────── */
+
+.slidev-layout hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--vue-green) 50%,
+    transparent 100%
+  );
+  margin: 2rem 0;
+}
+
+/* ── Lists ────────────────────────────────────────────────── */
+
+.slidev-layout ul li::marker {
+  color: var(--vue-green-light);
+}
+
+.slidev-layout ol li::marker {
+  color: var(--vue-green-light);
+  font-weight: 600;
+}
+
+/* ── Selection ────────────────────────────────────────────── */
+
+::selection {
+  background: color-mix(in srgb, var(--vue-green) 40%, transparent);
+  color: var(--text-primary);
+}

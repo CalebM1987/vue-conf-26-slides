@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [ $# -lt 2 ]; then
+  echo "Usage: fill-css <selector> <value>" >&2
+  exit 1
+fi
+
+# shellcheck source=_resolve-session
+source "$(dirname "$0")/_resolve-session"
+
+SELECTOR="$1"
+FILL_VALUE="$2"
+# Escape single quotes in selector and value for embedding in JS string
+SELECTOR_ESC="${SELECTOR//\'/\'}"
+FILL_VALUE_ESC="${FILL_VALUE//\'/\'}"
+playwright-cli $_SESSION_FLAG run-code "async page => { await page.locator('${SELECTOR_ESC}').fill('${FILL_VALUE_ESC}'); }"

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [ $# -lt 2 ]; then
+  echo "Usage: upload <selector> <file>" >&2
+  exit 1
+fi
+
+# shellcheck source=_resolve-session
+source "$(dirname "$0")/_resolve-session"
+
+SELECTOR="$1"
+FILE_PATH="$2"
+SELECTOR_ESC="${SELECTOR//\'/\'}"
+FILE_PATH_ESC="${FILE_PATH//\'/\'}"
+playwright-cli $_SESSION_FLAG run-code "async page => { await page.locator('${SELECTOR_ESC}').setInputFiles('${FILE_PATH_ESC}'); }"

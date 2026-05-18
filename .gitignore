@@ -1,0 +1,13 @@
+node_modules
+.DS_Store
+dist
+*.local
+.remote-assets
+components.d.ts
+
+# Playwright skill runtime artifacts (snapshots, screenshots, sessions)
+.playwright-cli/
+.playwright-skill/auth/
+.playwright-skill/cache/
+.playwright-skill/sessions/
+.playwright-skill/session
