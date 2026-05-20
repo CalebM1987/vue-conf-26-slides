@@ -1120,6 +1120,307 @@ VOCABULARY ANCHOR: every lever name on this slide is one the rest of the talk wi
 
 ---
 layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="floor-slide">
+  <div class="floor-kicker">out of the box</div>
+  <div class="floor-models">
+    <div class="floor-model">GPT-5</div>
+    <div class="floor-model">Claude Opus 4.7</div>
+    <div class="floor-model">Gemini 3</div>
+  </div>
+  <div class="floor-rule" aria-hidden="true">
+    <span class="floor-rule-line"></span>
+    <span class="floor-rule-label">MEDIAN OUTPUT</span>
+    <span class="floor-rule-line"></span>
+  </div>
+  <div class="floor-statement">
+    <p class="floor-line-1">Every developer gets the same <span class="floor-em">median intelligence per token</span>.</p>
+    <p class="floor-line-2">Same models. Same outputs. <span class="floor-em-strong">The floor is level.</span></p>
+  </div>
+  <p class="floor-caption">Out of the box, we&rsquo;re all equal.</p>
+</div>
+
+<style>
+.floor-slide {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.floor-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.floor-models {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.floor-model {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  padding: 0.45rem 0.9rem;
+  background: var(--bg-elev-1);
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+}
+
+.floor-rule {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 56rem;
+}
+
+.floor-rule-line {
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent,
+    color-mix(in srgb, var(--vue-green) 60%, transparent),
+    transparent);
+}
+
+.floor-rule-label {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+}
+
+.floor-statement {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: 60rem;
+}
+
+.floor-line-1 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin: 0;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+}
+
+.floor-line-2 {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.floor-em {
+  color: var(--vue-green-light);
+  font-weight: 700;
+}
+
+.floor-em-strong {
+  background: linear-gradient(110deg, var(--vue-green-light) 0%, var(--vue-blue) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.floor-caption {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0;
+}
+</style>
+
+<!--
+S12a · "Out of the box, we're all equal."
+
+DELIVERY:
+- "Every developer in this room has access to the same models."
+- Name them. GPT-5, Claude Opus 4.7, Gemini 3. Same APIs. Same prices per token.
+- "Out of the box, you get the median intelligence per token. The median output. That's the floor."
+- Pause. "The floor is level. So the question becomes: what do you build above it?"
+- Tee up the next slide.
+
+NARRATIVE BEAT: sets up the harness as a differentiator, not a tool. The audience needs to feel the equal-starting-point before the next slide drives home "your harness is your edge."
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="edge-slide">
+  <div class="edge-kicker">above the floor</div>
+  <h1 class="edge-headline">Your harness is your <span class="edge-em">edge</span>.</h1>
+  <div class="edge-grid">
+    <div class="edge-card">
+      <div class="edge-card-tag">PULLS THE MEDIAN UP</div>
+      <div class="edge-card-body">Context, memory, tools, eval — tuned to <em>this</em> project. Median output becomes <span class="edge-card-em">your</span> output.</div>
+    </div>
+    <div class="edge-card">
+      <div class="edge-card-tag">LIVING · BREATHING</div>
+      <div class="edge-card-body">Every rep updates it. Every spec, every review, every flagged regression — your harness gets sharper.</div>
+    </div>
+    <div class="edge-card edge-card-emph">
+      <div class="edge-card-tag">UNIQUELY YOURS</div>
+      <div class="edge-card-body">Your experience, your judgment, your defaults — <span class="edge-card-em">infused into the process</span>. Nobody else has this one.</div>
+    </div>
+  </div>
+  <p class="edge-caption">The model is a commodity. <span class="edge-em">The harness is you.</span></p>
+</div>
+
+<style>
+.edge-slide {
+  max-width: 78rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.edge-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.edge-headline {
+  font-family: var(--font-display) !important;
+  font-size: 3.2rem !important;
+  font-weight: 700 !important;
+  color: var(--text-primary) !important;
+  margin: 0 !important;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+}
+
+.edge-em {
+  background: linear-gradient(110deg, var(--vue-green-light) 0%, var(--vue-blue) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.edge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.edge-card {
+  padding: 1.4rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 0.65rem;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 92%, var(--vue-green) 8%) 0%,
+      var(--bg-elev-1) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  text-align: left;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 4%, transparent);
+}
+
+.edge-card-emph {
+  border-color: color-mix(in srgb, var(--vue-green-light) 38%, var(--border));
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, white 5%, transparent),
+    0 0 22px color-mix(in srgb, var(--vue-green) 18%, transparent);
+}
+
+.edge-card-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+}
+
+.edge-card-body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.edge-card-body em {
+  color: var(--vue-green-light);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.edge-card-em {
+  color: var(--vue-green-light);
+  font-weight: 700;
+}
+
+.edge-caption {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0.5rem 0 0;
+}
+</style>
+
+<!--
+S12b · "Your harness is your edge."
+
+DELIVERY:
+- "Out of the box, the floor is level. The harness is what you build above it."
+- Walk the three cards:
+  - "Pulls the median up — context, memory, tools, eval tuned to THIS project."
+  - "Living and breathing — every rep, every review, every spec — your harness gets sharper."
+  - "Uniquely yours — your experience, your judgment, your defaults, infused into the process."
+- Land the caption SLOWLY: "The model is a commodity. The harness is you."
+- This is the line that lets the audience feel ownership of the rest of the talk. Earn the pause.
+
+NARRATIVE BEAT: this is where the talk goes from "here's a framework" to "this is YOUR framework." Sets up the harness-visualizer reveal on the next slide — the visualizer is a place to SEE the harness, but the harness is yours.
+-->
+
+---
+layout: default
 class: '!justify-center text-center'
 transition: fade
 ---
@@ -1318,12 +1619,281 @@ class: '!justify-center'
 transition: fade
 ---
 
+<div class="viz-slide">
+  <div class="viz-kicker">harness-visualizer · in motion</div>
+  <div class="viz-shot">
+  <img :src="'/screenshots/agents-expanded.png'" alt="harness-visualizer showing the agents view with claude-code expanded" />
+</div>
+</div>
+
+<style>
+.viz-slide {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.viz-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.viz-shot {
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: var(--bg-elev-1);
+  aspect-ratio: 16 / 8.5;
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.35),
+    0 0 28px color-mix(in srgb, var(--vue-green) 8%, transparent);
+}
+
+.viz-shot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.viz-caption {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0;
+  text-align: center;
+}
+
+.viz-em {
+  color: var(--vue-green-light);
+  font-style: normal;
+  font-weight: 600;
+}
+</style>
+
+<!--
+S14a · "harness-visualizer in motion." The recursive-authenticity hook.
+
+DELIVERY:
+- "Here it is, running, pointed at its own repo."
+- Pause. Let the audience read the screenshot.
+- "Twelve artifacts, 47k tokens, 2 flagged issues. That's claude-code's surface in this project."
+- "Today's tour is what this app surfaces."
+
+NOTE: Screenshot at public/screenshots/agents-expanded.png — re-capture closer to talk day for freshness.
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+clicks: 2
+---
+
+<div class="lenses-slide">
+  <div class="lenses-kicker">three lenses · one source of truth</div>
+
+  <div class="lenses-tabs">
+    <div class="lenses-tab" :class="{ active: $clicks === 0 }">
+      <span class="lenses-tab-num">01</span>
+      <span class="lenses-tab-name">Agents</span>
+    </div>
+    <div class="lenses-tab" :class="{ active: $clicks === 1 }">
+      <span class="lenses-tab-num">02</span>
+      <span class="lenses-tab-name">Issues</span>
+    </div>
+    <div class="lenses-tab" :class="{ active: $clicks === 2 }">
+      <span class="lenses-tab-num">03</span>
+      <span class="lenses-tab-name">Table</span>
+    </div>
+  </div>
+
+  <div class="lenses-stage">
+    <div class="lens-shot" v-show="$clicks === 0">
+      <img :src="'/screenshots/agents-view.png'" alt="Agents view" />
+      <p class="lens-cap"><span class="lens-cap-key">Agents</span> · per-tool view: cascade pattern, token total, configured artifacts, issues.</p>
+    </div>
+    <div class="lens-shot" v-show="$clicks === 1">
+      <img :src="'/screenshots/issues-view.png'" alt="Issues view" />
+      <p class="lens-cap"><span class="lens-cap-key">Issues</span> · status flags: oversize, stale, conflict, orphan — plus token-budget warnings.</p>
+    </div>
+    <div class="lens-shot" v-show="$clicks === 2">
+      <img :src="'/screenshots/table-view.png'" alt="Table view" />
+      <p class="lens-cap"><span class="lens-cap-key">Table</span> · sortable inventory: every artifact, scope, path, activation, token count.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.lenses-slide {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lenses-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.lenses-tabs {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.4rem;
+  background: var(--bg-elev-1);
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+}
+
+.lenses-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.6rem 0.85rem;
+  border-radius: 0.4rem;
+  background: transparent;
+  transition: background-color 200ms ease, color 200ms ease, box-shadow 200ms ease;
+  color: var(--text-muted);
+}
+
+.lenses-tab.active {
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-2) 78%, var(--vue-green) 22%) 0%,
+      var(--bg-elev-2) 100%);
+  color: var(--text-primary);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, white 5%, transparent),
+    0 0 14px color-mix(in srgb, var(--vue-green) 14%, transparent);
+}
+
+.lenses-tab-num {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: inherit;
+  opacity: 0.6;
+}
+
+.lenses-tab.active .lenses-tab-num {
+  color: var(--vue-green-light);
+  opacity: 1;
+}
+
+.lenses-tab-name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.lenses-stage {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: var(--bg-elev-1);
+  aspect-ratio: 16 / 8.5;
+  box-shadow:
+    0 12px 36px rgba(0, 0, 0, 0.32),
+    0 0 26px color-mix(in srgb, var(--vue-green) 6%, transparent);
+}
+
+.lens-shot {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.lens-shot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.lens-cap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.85rem 1.25rem;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-base) 0%, transparent) 0%,
+      color-mix(in srgb, var(--bg-base) 85%, transparent) 50%,
+      color-mix(in srgb, var(--bg-base) 95%, transparent) 100%);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.lens-cap-key {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  margin-right: 0.35rem;
+}
+</style>
+
+<!--
+S14b · "Three lenses, one source of truth." Progressive reveal — one large shot per click.
+
+CLICKS:
+  0 (default): Agents tab active, agents-view screenshot
+  1:           Issues tab active, issues-view screenshot
+  2:           Table tab active, table-view screenshot
+
+DELIVERY:
+- Land the kicker. "Same data, three views."
+- Click 0 — Agents: "Per-tool view. You see at a glance: which agents are configured, what they're carrying, what's flagged."
+- Click 1 — Issues: "What needs attention. Token budget warnings, oversize files, stale entries — surfaced together."
+- Click 2 — Table: "Raw inventory. Sort by scope, by tokens, by activation. The power-user lens."
+- "Today we're walking the data, not the views. The views are the demo at the end."
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
 <div class="skip-slide">
   <div class="skip-kicker">First stop: Prompting</div>
 
   <p class="skip-line">You're already good at this.</p>
 
-  <p class="skip-sub">Walking past — the interesting work is downstream.</p>
+  <p class="skip-sub">The interesting work is downstream.</p>
 </div>
 
 <style>
@@ -1373,6 +1943,133 @@ DELIVERY:
 - "I'm walking past it. The interesting work is downstream."
 - Then immediately advance to Context.
 - 15-20 seconds total. Don't dwell.
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="budget-slide">
+  <div class="budget-kicker">02 · Context — the working set right now</div>
+  <div class="budget-bar">
+    <div class="budget-zone budget-always">
+      <div class="budget-zone-label">always-loaded</div>
+      <div class="budget-zone-name">cascade</div>
+      <div class="budget-zone-files">AGENTS.md · CLAUDE.md</div>
+    </div>
+    <div class="budget-zone budget-ondemand">
+      <div class="budget-zone-label">on-demand</div>
+      <div class="budget-zone-name">retrieved</div>
+      <div class="budget-zone-files">conventions docs · nested rules files · specs · skills</div>
+    </div>
+  </div>
+  <p class="budget-caption">Context management is about breaking things down so the agent loads <span class="budget-em">only what&rsquo;s relevant to the task at hand</span>.</p>
+</div>
+
+<style>
+.budget-slide {
+  max-width: 78rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.budget-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.budget-bar {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.budget-zone {
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.budget-always {
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 82%, var(--vue-green) 18%) 0%,
+      var(--bg-elev-1) 100%);
+}
+
+.budget-ondemand {
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 88%, var(--vue-blue) 12%) 0%,
+      var(--bg-elev-1) 100%);
+}
+
+.budget-zone-label {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.budget-always .budget-zone-label { color: var(--vue-green-light); }
+.budget-ondemand .budget-zone-label { color: #82aaff; }
+
+.budget-zone-name {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.budget-zone-files {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.budget-caption {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0;
+}
+
+.budget-em {
+  color: var(--vue-green-light);
+  font-style: normal;
+  font-weight: 700;
+}
+</style>
+
+<!--
+S15b · "Context = the working set right now." Sets up the budget framing for the whole Context section.
+
+DELIVERY:
+- "Context isn't everything the agent COULD know. It's what loads right now."
+- Walk the three zones: always-loaded, on-demand, never.
+- "Engineering context means deciding what goes where."
+- Tee up AGENTS.md as the prime example of always-loaded.
 -->
 
 ---
@@ -1521,8 +2218,967 @@ class: '!justify-center'
 transition: fade
 ---
 
+<div class="inside-slide">
+  <div class="inside-kicker">02 · Context — inside AGENTS.md</div>
+  <div class="inside-grid">
+    <div class="inside-cell"><span class="inside-h">What this project is</span><span class="inside-d">scope, audience, NDA</span></div>
+    <div class="inside-cell"><span class="inside-h">Stack</span><span class="inside-d">packages + roles</span></div>
+    <div class="inside-cell"><span class="inside-h">Repo layout</span><span class="inside-d">tree, ownership</span></div>
+    <div class="inside-cell"><span class="inside-h">Harness layer taxonomy</span><span class="inside-d">the data model</span></div>
+    <div class="inside-cell"><span class="inside-h">Diagnostic codes</span><span class="inside-d">stable severity map</span></div>
+    <div class="inside-cell inside-cell-bold"><span class="inside-h">Security rules</span><span class="inside-d">non-negotiable</span></div>
+    <div class="inside-cell"><span class="inside-h">Conventions</span><span class="inside-d">TS · Vue · backend</span></div>
+    <div class="inside-cell"><span class="inside-h">Quality gates</span><span class="inside-d">typecheck · lint · test</span></div>
+    <div class="inside-cell"><span class="inside-h">Spec workflow</span><span class="inside-d">discovery → tasks</span></div>
+    <div class="inside-cell"><span class="inside-h">Roadmap</span><span class="inside-d">phase status</span></div>
+    <div class="inside-cell"><span class="inside-h">Out of scope</span><span class="inside-d">deliberate non-goals</span></div>
+    <div class="inside-cell"><span class="inside-h">Working agreement</span><span class="inside-d">how agents behave</span></div>
+  </div>
+  <p class="inside-caption">Every agent reads this. <span class="inside-em">When it changes, the project&rsquo;s posture changes.</span></p>
+</div>
+
+<style>
+.inside-slide {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.inside-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.inside-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+}
+
+.inside-cell {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--bg-elev-1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.inside-cell-bold {
+  border-color: color-mix(in srgb, #f07178 28%, var(--border));
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 92%, #f07178 8%) 0%,
+      var(--bg-elev-1) 100%);
+}
+
+.inside-h {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.inside-cell-bold .inside-h { color: #f4a3a8; }
+
+.inside-d {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.inside-caption {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0;
+}
+
+.inside-em {
+  color: var(--vue-green-light);
+  font-style: normal;
+  font-weight: 600;
+}
+</style>
+
+<!--
+S16a · "Inside AGENTS.md." Concrete look at what's actually in the canonical file.
+
+DELIVERY:
+- "Here's what's in mine. Twelve sections."
+- Highlight the Security rules card (the bold one) — "the only one I really call non-negotiable."
+- "Every agent loads this. So when the rules change, every agent's posture changes."
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="enough-slide">
+  <div class="enough-kicker">02 · Context — when one file isn&rsquo;t enough</div>
+
+  <div class="enough-top">
+    <div class="enough-anchor">
+      <div class="enough-anchor-label">repo-wide</div>
+      <div class="enough-anchor-name"><code>AGENTS.md</code></div>
+      <div class="enough-anchor-desc">The constitution. One file, every agent.</div>
+    </div>
+  </div>
+
+  <div class="enough-but">but&hellip;</div>
+
+  <div class="enough-grid">
+    <div class="enough-ws">
+      <div class="enough-ws-name">backend/</div>
+      <div class="enough-ws-tag">Express · Socket.IO · chokidar</div>
+    </div>
+    <div class="enough-ws">
+      <div class="enough-ws-name">frontend/</div>
+      <div class="enough-ws-tag">Vue 3 · Pinia · Tailwind</div>
+    </div>
+    <div class="enough-ws">
+      <div class="enough-ws-name">shared/</div>
+      <div class="enough-ws-tag">zod · TS types · event maps</div>
+    </div>
+  </div>
+
+  <p class="enough-caption">Every workspace has its own grain.</p>
+</div>
+
+<style>
+.enough-slide {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.enough-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.enough-top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.enough-anchor {
+  padding: 1.35rem 2rem;
+  border: 1px solid color-mix(in srgb, var(--vue-green-light) 35%, var(--border));
+  border-radius: 0.75rem;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 82%, var(--vue-green) 18%) 0%,
+      var(--bg-elev-1) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  min-width: 24rem;
+  box-shadow:
+    0 0 22px color-mix(in srgb, var(--vue-green) 18%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 5%, transparent);
+}
+
+.enough-anchor-label {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+}
+
+.enough-anchor-name code {
+  font-family: var(--font-mono);
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  padding: 0.18em 0.65em;
+  margin: 0 0.18em;
+}
+
+.enough-anchor-desc {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.enough-but {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.enough-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.enough-ws {
+  padding: 1.1rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background: var(--bg-elev-1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.enough-ws-name {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.enough-ws-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.enough-caption {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  font-style: italic;
+  margin: 0.25rem 0 0;
+}
+</style>
+
+<!--
+S16b · "When AGENTS.md isn't enough." Sets up the need for progressive disclosure docs.
+
+DELIVERY:
+- "AGENTS.md is the constitution. One file, every agent reads it."
+- "But the backend isn't the frontend isn't the shared layer."
+- "Each workspace has its own grain. Trying to fit it all in AGENTS.md bloats the file."
+- Pause. Tee up the next slide: "So we layer."
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="pd-tree-slide">
+  <div class="pd-tree-kicker">02 · Context — progressive disclosure, made of files</div>
+
+  <div class="pd-tree-grid">
+    <div class="pd-tree-card">
+      <div class="pd-tree-bar"><span class="pd-tree-path">backend/docs/conventions/</span></div>
+      <div class="pd-tree-body">
+        <div class="pd-tree-row pd-tree-dir">patterns/<span class="pd-tree-note">HOW we build</span></div>
+        <div class="pd-tree-row pd-tree-dir">features/<span class="pd-tree-note">WHAT we ship</span></div>
+      </div>
+    </div>
+    <div class="pd-tree-card">
+      <div class="pd-tree-bar"><span class="pd-tree-path">frontend/docs/conventions/</span></div>
+      <div class="pd-tree-body">
+        <div class="pd-tree-row pd-tree-dir">patterns/<span class="pd-tree-note">HOW we build</span></div>
+        <div class="pd-tree-row pd-tree-dir">features/<span class="pd-tree-note">WHAT we ship</span></div>
+      </div>
+    </div>
+    <div class="pd-tree-card">
+      <div class="pd-tree-bar"><span class="pd-tree-path">shared/docs/conventions/</span></div>
+      <div class="pd-tree-body">
+        <div class="pd-tree-row pd-tree-dir">patterns/<span class="pd-tree-note">HOW we build</span></div>
+        <div class="pd-tree-row pd-tree-dim">&mdash;</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pd-tree-legend">
+    <div class="pd-tree-leg"><span class="pd-tree-leg-key">patterns</span><span class="pd-tree-leg-val">reusable idioms</span></div>
+    <div class="pd-tree-leg"><span class="pd-tree-leg-key">features</span><span class="pd-tree-leg-val">domain capabilities</span></div>
+  </div>
+
+  <p class="pd-tree-caption">Agents load only what&rsquo;s relevant to where they&rsquo;re working.</p>
+</div>
+
+<style>
+.pd-tree-slide {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.pd-tree-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.pd-tree-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+}
+
+.pd-tree-card {
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background: var(--bg-elev-1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.pd-tree-bar {
+  padding: 0.5rem 0.85rem;
+  background: var(--bg-elev-2);
+  border-bottom: 1px solid var(--border-soft);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+}
+
+.pd-tree-path { color: var(--vue-green-light); font-weight: 600; }
+
+.pd-tree-body {
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.pd-tree-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.pd-tree-dir { color: var(--text-primary); font-weight: 600; }
+.pd-tree-dim { color: var(--text-faint); }
+
+.pd-tree-note {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.pd-tree-legend {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.pd-tree-leg {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.pd-tree-leg-key {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+}
+
+.pd-tree-leg-val {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.pd-tree-caption {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0;
+}
+</style>
+
+<!--
+S16c · "Progressive disclosure, made of files." The structure of the docs system.
+
+DELIVERY:
+- "Each workspace gets its own conventions folder."
+- "Patterns are HOW you build — reusable idioms. Express handler shape. Pinia store layout."
+- "Features are WHAT you've shipped — the scanner, the manifest emitter, the agent panels."
+- "Agents only load what's relevant to where they're working." — that's the disclosure win.
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="photo-slide">
+  <div class="photo-kicker">02 · Context — photo-accurate, not generic</div>
+
+  <div class="photo-grid">
+    <div class="photo-card photo-bad">
+      <div class="photo-tag">GENERIC TEMPLATE</div>
+      <div class="photo-quote">&ldquo;Vue 3 components should use the Composition API. Use Pinia for state management. Prefer scoped styles for component isolation&hellip;&rdquo;</div>
+      <div class="photo-foot">Could be any project. Cites nothing.</div>
+    </div>
+    <div class="photo-card photo-good">
+      <div class="photo-tag">GENERATED — REAL EVIDENCE</div>
+      <div class="photo-doc">
+        <div class="photo-line photo-h">&#35;&#35; Pattern</div>
+        <div class="photo-line">Routes wrap handlers in <code>safeAsync()</code>.</div>
+        <div class="photo-spacer"></div>
+        <div class="photo-line photo-h">&#35;&#35; Evidence</div>
+        <div class="photo-line photo-ev">backend/src/routes/scanner.ts:42</div>
+        <div class="photo-line photo-ev">backend/src/routes/manifest.ts:18</div>
+        <div class="photo-line photo-ev">backend/src/routes/browse.ts:27</div>
+      </div>
+      <div class="photo-foot">You can navigate to where the rule lives.</div>
+    </div>
+  </div>
+
+  <p class="photo-caption">No invented patterns. <span class="photo-em">If it&rsquo;s in the doc, it&rsquo;s in the code.</span></p>
+</div>
+
+<style>
+.photo-slide {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.photo-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.photo-card {
+  padding: 1.25rem 1.15rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.photo-bad {
+  background: var(--bg-elev-1);
+  opacity: 0.7;
+}
+
+.photo-bad .photo-quote {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.photo-good {
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 88%, var(--vue-green) 12%) 0%,
+      var(--bg-elev-1) 100%);
+  border-color: color-mix(in srgb, var(--vue-green-light) 30%, var(--border));
+  box-shadow: 0 0 18px color-mix(in srgb, var(--vue-green) 14%, transparent);
+}
+
+.photo-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.photo-good .photo-tag { color: var(--vue-green-light); }
+
+.photo-quote {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.photo-doc {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  background: var(--bg-elev-2);
+  border: 1px solid var(--border-soft);
+  border-radius: 0.4rem;
+  padding: 0.8rem 0.95rem;
+  color: var(--text-secondary);
+}
+
+.photo-line { white-space: pre; }
+.photo-h { color: var(--vue-green-light); font-weight: 600; margin-top: 0.1rem; }
+.photo-ev { color: var(--code-cyan); font-size: 0.78rem; }
+.photo-spacer { height: 0.4rem; }
+
+.photo-doc code {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+  color: var(--code-cyan);
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.photo-foot {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.photo-caption {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0;
+}
+
+.photo-em {
+  color: var(--vue-green-light);
+  font-style: normal;
+  font-weight: 600;
+}
+</style>
+
+<!--
+S16d · "Photo-accurate, not generic." The single most distinctive thing about these docs.
+
+DELIVERY:
+- Left card is the bad version — what most "convention docs" look like. Could apply anywhere. Cites nothing.
+- Right card is the real thing — patterns with path:line evidence pulled from this codebase.
+- Land: "No invented patterns. If it's in the doc, it's in the code." — that's the trust contract.
+- This is the only slide in the deck that uses a real path:line snippet (decision logged in slides-build-plan.md). Resist the temptation to swap for stylized.
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="auth-slide">
+  <div class="auth-kicker">02 · Context — the docs author themselves</div>
+
+  <div class="auth-phases">
+    <div class="auth-phase">
+      <div class="auth-num">01</div>
+      <div class="auth-name">discover</div>
+      <div class="auth-desc">Workspaces classified. Patterns + features detected.</div>
+      <div class="auth-meta">heuristic · no LLM</div>
+    </div>
+    <div class="auth-arrow">→</div>
+    <div class="auth-phase">
+      <div class="auth-num">02</div>
+      <div class="auth-name">scaffold</div>
+      <div class="auth-desc">Folders + READMEs created. Idempotent.</div>
+      <div class="auth-meta">filesystem</div>
+    </div>
+    <div class="auth-arrow">→</div>
+    <div class="auth-phase auth-phase-author">
+      <div class="auth-num">03</div>
+      <div class="auth-name">author</div>
+      <div class="auth-desc">Worker pool writes pattern + feature docs with evidence.</div>
+      <div class="auth-meta">parallel · bounded · LLM</div>
+    </div>
+  </div>
+
+  <div class="auth-stamps">
+    <div class="auth-stamp">re-runnable</div>
+    <div class="auth-stamp">symbol-level anchors</div>
+    <div class="auth-stamp">HIGH / MEDIUM / LOW staleness bands</div>
+  </div>
+
+  <p class="auth-caption">When code changes, re-run. <span class="auth-em">The docs catch up to the code.</span></p>
+</div>
+
+<style>
+.auth-slide {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.auth-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.auth-phases {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  gap: 0.5rem;
+  align-items: stretch;
+}
+
+.auth-phase {
+  padding: 1.25rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 92%, var(--vue-green) 8%) 0%,
+      var(--bg-elev-1) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 4%, transparent);
+}
+
+.auth-phase-author {
+  border-color: color-mix(in srgb, var(--vue-green-light) 35%, var(--border));
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, white 5%, transparent),
+    0 0 18px color-mix(in srgb, var(--vue-green) 16%, transparent);
+}
+
+.auth-num {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: var(--vue-green-light);
+  opacity: 0.75;
+}
+
+.auth-name {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  line-height: 1.05;
+}
+
+.auth-desc {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.auth-meta {
+  margin-top: auto;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--border-soft);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.auth-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  color: var(--vue-green);
+  opacity: 0.65;
+}
+
+.auth-stamps {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.auth-stamp {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  padding: 0.3rem 0.65rem;
+  border: 1px solid color-mix(in srgb, var(--vue-green-light) 25%, var(--border));
+  border-radius: 0.35rem;
+  background: var(--bg-elev-1);
+}
+
+.auth-caption {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0;
+}
+
+.auth-em {
+  color: var(--vue-green-light);
+  font-style: normal;
+  font-weight: 600;
+}
+</style>
+
+<!--
+S16e · "The docs author themselves." Closes the auto-authoring story.
+
+DELIVERY:
+- "Three phases. Discover is heuristics — no LLM, just looking at package.json and the file tree."
+- "Scaffold creates the folders. Idempotent — re-runnable."
+- "Author is the LLM work. Bounded worker pool — up to 12 doc-authors in parallel. Each writes ONE doc from a brief."
+- Stamps below reinforce the discipline.
+- Caption: "When code changes, re-run. The docs catch up to the code."
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="prec-slide">
+  <div class="prec-kicker">02 · Context — observational, not normative</div>
+
+  <div class="prec-stack">
+    <div class="prec-layer prec-layer-agents">
+      <div class="prec-layer-tag">NORMATIVE · human-authored</div>
+      <div class="prec-layer-name"><code>AGENTS.md</code></div>
+      <div class="prec-layer-role">Rules. Principles. Non-negotiables.</div>
+    </div>
+    <div class="prec-conflict">
+      <span class="prec-cflag">⚠ conflict?</span>
+      <span class="prec-cnote">flag for human review — never silently override</span>
+    </div>
+    <div class="prec-layer prec-layer-gen">
+      <div class="prec-layer-tag">OBSERVATIONAL · agent-authored</div>
+      <div class="prec-layer-name">generated convention docs</div>
+      <div class="prec-layer-role">Cited evidence. What the code does today.</div>
+    </div>
+  </div>
+
+  <p class="prec-caption">The agent describes. <span class="prec-em">The human decides what the rules should be.</span></p>
+</div>
+
+<style>
+.prec-slide {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.prec-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.prec-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+.prec-layer {
+  padding: 1.5rem 1.75rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 92%, var(--vue-green) 8%) 0%,
+      var(--bg-elev-1) 100%);
+}
+
+.prec-layer-agents {
+  border-color: color-mix(in srgb, var(--vue-green-light) 38%, var(--border));
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, white 5%, transparent),
+    0 0 22px color-mix(in srgb, var(--vue-green) 16%, transparent);
+}
+
+.prec-layer-gen {
+  border-color: color-mix(in srgb, #82aaff 28%, var(--border));
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 92%, #82aaff 8%) 0%,
+      var(--bg-elev-1) 100%);
+}
+
+.prec-layer-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.prec-layer-agents .prec-layer-tag { color: var(--vue-green-light); }
+.prec-layer-gen .prec-layer-tag { color: #82aaff; }
+
+.prec-layer-name {
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.prec-layer-name code {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+  color: var(--text-primary);
+  padding: 0.18em 0.65em;
+  margin: 0 0.18em;
+}
+
+.prec-layer-role {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.prec-conflict {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.45rem 1rem;
+  margin: 0.1rem auto;
+}
+
+.prec-cflag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffcb6b;
+}
+
+.prec-cnote {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.prec-caption {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0;
+}
+
+.prec-em {
+  color: var(--vue-green-light);
+  font-style: normal;
+  font-weight: 600;
+}
+</style>
+
+<!--
+S16f · "Observational, not normative." The precedence rule. Pairs with S23a (the reviewer story).
+
+DELIVERY:
+- "Two layers. AGENTS.md is normative — the rules I curate."
+- "The generated docs are observational — agent-authored, evidence-cited."
+- "When they conflict, the agent FLAGS — never overrides."
+- Caption: "The agent describes. The human decides what the rules should be."
+- This is the rule that the reviewer enforced (S23a callback later).
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
 <div class="pd-slide">
-  <div class="pd-kicker">02 · Context — progressive disclosure</div>
+  <div class="pd-kicker">02 · Context — the spec pipeline</div>
   <div class="pd-research">
     <div class="pd-research-label">parallel research</div>
     <div class="pd-research-chips">
@@ -1560,7 +3216,7 @@ transition: fade
       <div class="pd-note">the implementation surface</div>
     </div>
   </div>
-  <p class="pd-caption">Each step narrows what the next agent sees — the <span class="pd-em">smallest possible context</span>.</p>
+  <p class="pd-caption">Parallel research fans in. <span class="pd-em">One agent runs the pipeline</span> — each artifact narrows the next.</p>
 </div>
 
 <style>
@@ -1732,16 +3388,16 @@ transition: fade
 </style>
 
 <!--
-Context lever, stop 2: the architecture — multi-agent research feeding the sequential pipeline.
+Context lever, stop 2: the spec pipeline architecture — what specs ARE and how they get made.
 
 DELIVERY:
-- "Context isn't just one file. It's a discipline of revealing only what the next step needs."
-- Point at the dashed research box: "It starts with parallel research. Three agents go simultaneously — research-lead, integration-researcher, codebase-explorer."
-- "Their output feeds into discovery. From there, the pipeline runs sequentially."
-- Walk the four stops: discovery → requirements → design → tasks. Note discovery has the green border because it's the receiving step.
-- Land the caption: "Each step narrows what the next agent sees — the smallest possible context."
+- "Context isn't just files. Some of the most important context is GENERATED — the spec pipeline produces it."
+- Point at the dashed research box: "It starts with parallel research. Three subagents go simultaneously — research-lead, integration-researcher, codebase-explorer — fan out, return synthesized findings."
+- "Everything below that? One agent runs the pipeline. Discovery → requirements → design → tasks. Same main thread, working through stages. Each artifact narrows the next decision."
+- Plant the seed for later: "You'll notice the research happens in parallel — we'll come back to that pattern in the Tools section."
+- Land the caption: "Parallel research fans in. One agent runs the pipeline — each artifact narrows the next."
 
-NEXT SLIDE: the vendor-portability beat. Same pipeline exists as a Claude Code plugin AND a pi.dev skill — but only Claude Code can do the multi-agent orchestration.
+NEXT SLIDE: the vendor-portability beat. Same pipeline exists as a Claude Code plugin AND a pi.dev skill.
 -->
 
 ---
@@ -1773,7 +3429,7 @@ transition: fade
       <div class="vp-agents">
         <div class="vp-agent vp-agent-solo">single sequential agent</div>
       </div>
-      <div class="vp-cap vp-cap-no">— no multi-agent (platform limit)</div>
+      <div class="vp-cap vp-cap-no">↳ single agent, sequential</div>
     </div>
   </div>
   <p class="vp-caption">Same pipeline. Same artifacts. <span class="vp-em">Multi-agent is a capability — not the pattern.</span></p>
@@ -1786,7 +3442,7 @@ transition: fade
   padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .vp-kicker {
@@ -1801,7 +3457,7 @@ transition: fade
 
 .vp-headline {
   font-family: var(--font-display);
-  font-size: 1.85rem;
+  font-size: 1.55rem;
   font-weight: 600;
   color: var(--text-primary);
   margin: 0;
@@ -1820,16 +3476,16 @@ transition: fade
 }
 
 .vp-card {
-  padding: 1.4rem 1.25rem;
+  padding: 1.05rem 1.25rem 1.1rem;
   border: 1px solid var(--border);
-  border-radius: 0.75rem;
+  border-radius: 0.7rem;
   background:
     linear-gradient(180deg,
       color-mix(in srgb, var(--bg-elev-1) 92%, var(--vue-green) 8%) 0%,
       var(--bg-elev-1) 100%);
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
+  gap: 0.5rem;
   box-shadow: inset 0 1px 0 color-mix(in srgb, white 4%, transparent);
 }
 
@@ -1854,24 +3510,24 @@ transition: fade
 
 .vp-name {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 1.55rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--text-primary);
   letter-spacing: -0.01em;
-  margin: 0.1rem 0 0.3rem;
+  margin: 0 0 0.15rem;
 }
 
 .vp-agents {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0.25rem;
 }
 
 .vp-agent {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   color: var(--text-secondary);
-  padding: 0.3rem 0.55rem;
+  padding: 0.24rem 0.55rem;
   border: 1px solid var(--border-soft);
   border-radius: 0.3rem;
   background: var(--bg-elev-2);
@@ -1884,11 +3540,11 @@ transition: fade
 
 .vp-cap {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 500;
   letter-spacing: 0.08em;
-  margin-top: 0.4rem;
-  padding-top: 0.55rem;
+  margin-top: 0.25rem;
+  padding-top: 0.4rem;
   border-top: 1px solid var(--border-soft);
 }
 
@@ -1915,6 +3571,299 @@ DELIVERY:
 - Land the caption: "Same pipeline. Same artifacts. Multi-agent is a capability — not the pattern."
 
 WHY THIS MATTERS: protects the talk from being read as a Claude-only argument. The methodology is vendor-portable; multi-agent is a Claude Code-only acceleration. The pattern travels; the capability doesn't.
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="ccontract-slide">
+  <div class="ccontract-kicker">02 · Context — the spec is the comprehension contract</div>
+  <div class="ccontract-diagram">
+    <div class="ccontract-input">
+      <div class="ccontract-input-label">Plan</div>
+      <div class="ccontract-input-action">creates →</div>
+    </div>
+    <div class="ccontract-spec">
+      <div class="ccontract-spec-label">SPEC</div>
+      <div class="ccontract-spec-name">the artifact you understand</div>
+    </div>
+    <div class="ccontract-input">
+      <div class="ccontract-input-action">← verifies against</div>
+      <div class="ccontract-input-label">Eval</div>
+    </div>
+  </div>
+  <div class="ccontract-implement">
+    <div class="ccontract-impl-arrow">↑</div>
+    <div class="ccontract-impl-line"><span class="ccontract-impl-key">Implement</span> generates code <span class="ccontract-impl-key">against the spec</span></div>
+  </div>
+  <p class="ccontract-caption">You comprehend the spec. <span class="ccontract-em">The code, you verify.</span></p>
+</div>
+
+<style>
+.ccontract-slide {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.ccontract-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.ccontract-diagram {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+.ccontract-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.ccontract-input-label {
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.ccontract-input-action {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.ccontract-spec {
+  padding: 1.4rem 2rem;
+  border: 1px solid color-mix(in srgb, var(--vue-green-light) 40%, var(--border));
+  border-radius: 0.85rem;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 80%, var(--vue-green) 20%) 0%,
+      var(--bg-elev-1) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  box-shadow:
+    0 0 26px color-mix(in srgb, var(--vue-green) 18%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 6%, transparent);
+}
+
+.ccontract-spec-label {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+}
+
+.ccontract-spec-name {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.ccontract-implement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.ccontract-impl-arrow {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--vue-green);
+  opacity: 0.65;
+}
+
+.ccontract-impl-line {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+}
+
+.ccontract-impl-key {
+  color: var(--vue-green-light);
+  font-weight: 600;
+}
+
+.ccontract-caption {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.ccontract-em {
+  color: var(--vue-green-light);
+  font-weight: 700;
+}
+</style>
+
+<!--
+S18a · "The spec is the comprehension contract." The key framing of the talk, named explicitly.
+
+DELIVERY:
+- "This is the framing that does the most work in the talk."
+- "Plan creates the spec — the artifact you understand."
+- "Implement generates code against it."
+- "Eval verifies the code matches it."
+- Land: "You comprehend the spec. The code, you verify."
+- Pause. This is the moment that earns the whole rest of the talk.
+- This slide returns at the close (S27) as a callback.
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="substr-slide">
+  <div class="substr-kicker">03 · Memory — three substrates</div>
+  <div class="substr-grid">
+    <div class="substr-card substr-card-1">
+      <div class="substr-tag">.review/</div>
+      <div class="substr-name">What changed and why</div>
+      <div class="substr-desc">RRL artifacts after every meaningful turn.<br/>Typed, timestamped, risk-classified.</div>
+    </div>
+    <div class="substr-card substr-card-2">
+      <div class="substr-tag">specs/</div>
+      <div class="substr-name">What we agreed to</div>
+      <div class="substr-desc">Per-phase spec bundles.<br/>Discovery → requirements → design → tasks.</div>
+    </div>
+    <div class="substr-card substr-card-3">
+      <div class="substr-tag">state.json</div>
+      <div class="substr-name">Where we are</div>
+      <div class="substr-desc">Multi-phase workflow checkpoints.<br/>Progressive-context phase tracking.</div>
+    </div>
+  </div>
+  <p class="substr-caption">Three substrates. <span class="substr-em">Three questions the next agent can answer without you.</span></p>
+</div>
+
+<style>
+.substr-slide {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.substr-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.substr-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+}
+
+.substr-card {
+  padding: 1.5rem 1.4rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 92%, var(--vue-green) 8%) 0%,
+      var(--bg-elev-1) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 4%, transparent);
+}
+
+.substr-card-1 { border-color: color-mix(in srgb, #ffcb6b 28%, var(--border)); }
+.substr-card-2 { border-color: color-mix(in srgb, #82aaff 28%, var(--border)); }
+.substr-card-3 { border-color: color-mix(in srgb, #c792ea 28%, var(--border)); }
+
+.substr-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.substr-card-1 .substr-tag { color: #ffcb6b; }
+.substr-card-2 .substr-tag { color: #82aaff; }
+.substr-card-3 .substr-tag { color: #c792ea; }
+
+.substr-name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+  line-height: 1.15;
+}
+
+.substr-desc {
+  font-family: var(--font-body);
+  font-size: 0.96rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.substr-caption {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0;
+}
+
+.substr-em {
+  color: var(--vue-green-light);
+  font-style: normal;
+  font-weight: 600;
+}
+</style>
+
+<!--
+S18e · "Memory in three substrates." Sets up the Memory section.
+
+DELIVERY:
+- "Memory isn't one thing. Three substrates, three questions."
+- Walk the three cards: .review/, specs/, state.json.
+- The closing line is the point: each substrate answers a question the next agent could ask.
 -->
 
 ---
@@ -2216,29 +4165,145 @@ class: '!justify-center'
 transition: fade
 ---
 
+<div class="fts-slide">
+  <div class="fts-kicker">03 · Memory — no vector store. just SQL.</div>
+  <div class="fts-code">
+    <div class="fts-bar">.harness-visualizer/spec-memory.db</div>
+    <div class="fts-body">
+      <div class="fts-line fts-comment">-- per-section content, chunked by heading</div>
+      <div class="fts-line"><span class="fts-kw">CREATE TABLE</span> <span class="fts-id">chunks</span> (</div>
+      <div class="fts-line fts-indent">spec_name, kind, heading, heading_path, content</div>
+      <div class="fts-line">);</div>
+      <div class="fts-spacer"></div>
+      <div class="fts-line fts-comment">-- FTS5 mirror, trigger-synced on every write</div>
+      <div class="fts-line"><span class="fts-kw">CREATE VIRTUAL TABLE</span> <span class="fts-id">chunks_fts</span> <span class="fts-kw">USING</span> fts5(...);</div>
+      <div class="fts-spacer"></div>
+      <div class="fts-line fts-comment">-- agent retrieval, on demand</div>
+      <div class="fts-line"><span class="fts-kw">SELECT</span> spec_name <span class="fts-kw">FROM</span> chunks_fts</div>
+      <div class="fts-line fts-indent"><span class="fts-kw">WHERE</span> chunks_fts <span class="fts-kw">MATCH</span> <span class="fts-str">&apos;scope-aware AND scanner&apos;</span>;</div>
+    </div>
+  </div>
+  <p class="fts-caption">No vectors. No fine-tune. <span class="fts-em">Structured artifacts and full-text search.</span></p>
+</div>
+
+<style>
+.fts-slide {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.fts-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.fts-code {
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background: var(--bg-elev-1);
+  overflow: hidden;
+}
+
+.fts-bar {
+  padding: 0.55rem 0.95rem;
+  background: var(--bg-elev-2);
+  border-bottom: 1px solid var(--border-soft);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.fts-body {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  padding: 1rem 1.15rem;
+  color: var(--text-secondary);
+}
+
+.fts-line { white-space: pre; }
+.fts-indent { padding-left: 1.5em; }
+.fts-spacer { height: 0.45rem; }
+.fts-kw { color: var(--code-purple); font-weight: 600; }
+.fts-id { color: var(--code-blue); font-weight: 600; }
+.fts-str { color: var(--code-green); }
+.fts-comment { color: var(--text-faint); font-style: italic; }
+
+.fts-caption {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0;
+}
+
+.fts-em {
+  color: var(--vue-green-light);
+  font-style: normal;
+  font-weight: 600;
+}
+</style>
+
+<!--
+S20a · "No vector store. Just SQL." The proof of how agentic memory actually works in this project.
+
+DELIVERY:
+- "When I say 'agentic memory' people assume vectors. It isn't. It's SQLite."
+- Walk the schema: chunks + chunks_fts trigger-synced.
+- "The agent runs SELECT statements. The full-text index is just FTS5."
+- Land: "No vectors. No fine-tune. Just structured artifacts and full-text search."
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
 <div class="tools-slide">
   <div class="tools-kicker">04 · Tools — what the agent can actually do</div>
 
   <div class="tools-grid">
-    <div class="tool-card">
-      <div class="tool-badge">SKILL</div>
-      <div class="tool-name">playwright-skill</div>
-      <div class="tool-desc">Real-browser drive. Snapshot, click, fill, capture console + network. Session memory.</div>
+    <div class="tools-row tools-row-skills">
+      <div class="tool-card">
+        <div class="tool-badge">SKILL</div>
+        <div class="tool-name">playwright-skill</div>
+        <div class="tool-desc">Real-browser drive. Snapshot, click, fill, capture console + network. Session memory.</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-badge">SKILL</div>
+        <div class="tool-name">implementation-skill</div>
+        <div class="tool-desc">Single-agent execute against a tasks-doc spec.</div>
+      </div>
     </div>
-    <div class="tool-card">
-      <div class="tool-badge">SKILL</div>
-      <div class="tool-name">implementation-skill</div>
-      <div class="tool-desc">Single-agent execute against a tasks-doc spec.</div>
-    </div>
-    <div class="tool-card tool-multi">
-      <div class="tool-badge">PLUGIN · 4 agents</div>
-      <div class="tool-name">spec-gen</div>
-      <div class="tool-desc">discovery → requirements → design → tasks. Specs that become both context and memory.</div>
-    </div>
-    <div class="tool-card tool-multi">
-      <div class="tool-badge">PLUGIN · 5 agents</div>
-      <div class="tool-name">claude-build</div>
-      <div class="tool-desc">Orchestrator + researcher + test-writer + architect-reviewer + implementer.</div>
+    <div class="tools-row tools-row-plugins">
+      <div class="tool-card tool-multi">
+        <div class="tool-badge">PLUGIN · 4 agents</div>
+        <div class="tool-name">spec-gen</div>
+        <div class="tool-desc">discovery → requirements → design → tasks. Specs that become both context and memory.</div>
+      </div>
+      <div class="tool-card tool-multi">
+        <div class="tool-badge">PLUGIN · 5 agents</div>
+        <div class="tool-name">claude-build</div>
+        <div class="tool-desc">Orchestrator + researcher + test-writer + architect-reviewer + implementer.</div>
+      </div>
+      <div class="tool-card tool-multi">
+        <div class="tool-badge">PLUGIN · 5 agents</div>
+        <div class="tool-name">claude-qa</div>
+        <div class="tool-desc">qa-auditor + test-strategist + test-generator + regression-tracker + mutation-analyst.</div>
+      </div>
     </div>
   </div>
 
@@ -2266,9 +4331,22 @@ transition: fade
 }
 
 .tools-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 0.85rem;
+}
+
+.tools-row {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.tools-row-skills {
+  grid-template-columns: 1fr 1fr;
+}
+
+.tools-row-plugins {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .tool-card {
@@ -2334,9 +4412,740 @@ Tools lever, stop 1: inventory.
 
 DELIVERY:
 - "Tools are what the agent can actually DO inside this project."
-- Walk the four cards. Skills first (single-purpose), plugins next (multi-agent orchestrations).
+- Walk the five cards. Skills first (single-purpose), plugins next (multi-agent orchestrations).
 - The closing line is the point: "Each tool was built to fit THIS project's grain." — not off-the-shelf, not generic.
-- Next slide drills into Playwright as a worked example.
+- NEXT: we'll walk Plan → Implement → Validate through spec-gen, claude-build, claude-qa.
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="sg-slide">
+  <div class="sg-kicker">04 · Tools — <span class="sg-step">Plan</span> · <code>spec-gen</code></div>
+
+  <div class="sg-flow">
+    <div class="sg-research">
+      <div class="sg-research-tag">PARALLEL RESEARCH · subagents fan out</div>
+      <div class="sg-research-chips">
+        <span class="sg-chip">research-lead</span>
+        <span class="sg-chip">integration-researcher</span>
+        <span class="sg-chip">codebase-explorer</span>
+        <span class="sg-chip">requirements-analyst</span>
+      </div>
+    </div>
+    <div class="sg-arrow">↓</div>
+    <div class="sg-outputs">
+      <div class="sg-outputs-tag">THE SPEC BUNDLE</div>
+      <div class="sg-outputs-grid">
+        <div class="sg-out"><div class="sg-out-name">discovery.md</div><div class="sg-out-desc">scope · constraints · sources</div></div>
+        <div class="sg-out"><div class="sg-out-name">research-briefs.md</div><div class="sg-out-desc">synthesized findings</div></div>
+        <div class="sg-out"><div class="sg-out-name">requirements.md</div><div class="sg-out-desc">EARS · functional + non-functional</div></div>
+        <div class="sg-out"><div class="sg-out-name">design.md</div><div class="sg-out-desc">architecture · diagrams · trade-offs</div></div>
+        <div class="sg-out sg-out-final"><div class="sg-out-name">tasks.md</div><div class="sg-out-desc">dependency-ordered implementation surface</div></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="sg-caption">Plan once. <span class="sg-em">Every artifact anchors what comes next.</span></p>
+</div>
+
+<style>
+.sg-slide {
+  max-width: 84rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.sg-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.sg-step {
+  background: linear-gradient(110deg, var(--vue-green-light) 0%, var(--vue-blue) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.sg-kicker code {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+}
+
+.sg-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.sg-research {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  border: 1px dashed color-mix(in srgb, var(--vue-green-light) 30%, var(--border));
+  border-radius: 0.55rem;
+  background: color-mix(in srgb, var(--bg-elev-1) 90%, var(--vue-green) 10%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.sg-research-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+}
+
+.sg-research-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.sg-chip {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  padding: 0.28rem 0.6rem;
+  border: 1px solid color-mix(in srgb, var(--vue-green-light) 22%, var(--border));
+  border-radius: 0.35rem;
+  background: var(--bg-elev-2);
+}
+
+.sg-arrow {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--vue-green);
+  opacity: 0.7;
+  line-height: 1;
+}
+
+.sg-outputs {
+  width: 100%;
+  padding: 0.85rem 1rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 92%, var(--vue-green) 8%) 0%,
+      var(--bg-elev-1) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 4%, transparent);
+}
+
+.sg-outputs-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  text-align: center;
+}
+
+.sg-outputs-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+
+.sg-out {
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  background: var(--bg-elev-2);
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
+}
+
+.sg-out-final {
+  border-color: color-mix(in srgb, var(--vue-green-light) 40%, var(--border));
+  box-shadow: 0 0 14px color-mix(in srgb, var(--vue-green) 14%, transparent);
+}
+
+.sg-out-name {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.sg-out-final .sg-out-name {
+  color: var(--vue-green-light);
+}
+
+.sg-out-desc {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+.sg-caption {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0.2rem 0 0;
+  text-align: center;
+}
+
+.sg-em {
+  color: var(--vue-green-light);
+  font-weight: 700;
+}
+</style>
+
+<!--
+04 · Tools — Plan: spec-gen. Opens the P→I→V section.
+
+DELIVERY:
+- "Three tools, three steps. Plan, Implement, Validate. Spec-gen is the Plan tool."
+- Point at the dashed research band: "Multi-agent — parallel research at the front. Four subagents fan out, return synthesized findings. (We'll come back to multi-agent in a couple slides.)"
+- Point at the output grid: "Out the other end: a spec bundle. Five artifacts. Discovery, research, requirements in EARS format, design with diagrams, tasks in dependency order."
+- Highlight tasks.md (the green-glowing card): "Tasks.md is the implementation surface — the handoff to the next step."
+- Land the caption: "Plan once. Every artifact anchors what comes next."
+
+WHY THIS LANDS: anchors P→I→V on a concrete output the audience can picture, and primes them to think of the next slide (claude-build) as consuming this output.
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="cb-slide">
+  <div class="cb-kicker">04 · Tools — <span class="sg-step">Implement</span> · <code>claude-build</code></div>
+
+  <div class="cb-waves">
+    <div class="cb-wave">
+      <div class="cb-wave-tag">WAVE 0</div>
+      <div class="cb-wave-name">contracts</div>
+      <div class="cb-wave-roles">
+        <div class="cb-role cb-role-imp">1× implementer</div>
+      </div>
+      <div class="cb-wave-note">sets types &amp; interfaces &mdash; nothing else moves yet</div>
+    </div>
+    <div class="cb-wave-arrow">→</div>
+    <div class="cb-wave cb-wave-mid">
+      <div class="cb-wave-tag">WAVE 1</div>
+      <div class="cb-wave-name">parallel build</div>
+      <div class="cb-wave-roles">
+        <div class="cb-role cb-role-imp">3× implementers</div>
+      </div>
+      <div class="cb-wave-note">work in parallel &mdash; no file collisions, contracts hold</div>
+    </div>
+    <div class="cb-wave-arrow">→</div>
+    <div class="cb-wave">
+      <div class="cb-wave-tag">WAVE 2</div>
+      <div class="cb-wave-name">integration</div>
+      <div class="cb-wave-roles">
+        <div class="cb-role cb-role-imp">1× implementer</div>
+        <div class="cb-role cb-role-arch">architect-reviewer</div>
+        <div class="cb-role cb-role-test">test-writer</div>
+      </div>
+      <div class="cb-wave-note">stitch, review, write tests</div>
+    </div>
+  </div>
+
+  <div class="cb-side">
+    <span class="cb-side-tag">across all waves</span>
+    <span class="cb-side-chip"><code>implementation-orchestrator</code> &middot; coordinates</span>
+    <span class="cb-side-chip"><code>researcher</code> &middot; on-demand lookups</span>
+  </div>
+
+  <p class="cb-caption"><span class="cb-em">Wave 0 sets the contracts.</span> Wave 1 can&rsquo;t collide. Wave 2 verifies.</p>
+</div>
+
+<style>
+.cb-slide {
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.cb-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.cb-kicker code {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+}
+
+.cb-waves {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  gap: 0.5rem;
+  align-items: stretch;
+}
+
+.cb-wave {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.65rem;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 92%, var(--vue-green) 8%) 0%,
+      var(--bg-elev-1) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 4%, transparent);
+}
+
+.cb-wave-mid {
+  border-color: color-mix(in srgb, var(--vue-green-light) 38%, var(--border));
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, white 5%, transparent),
+    0 0 18px color-mix(in srgb, var(--vue-green) 16%, transparent);
+}
+
+.cb-wave-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--vue-green-light);
+}
+
+.cb-wave-name {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.cb-wave-roles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: 0.15rem;
+}
+
+.cb-role {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  padding: 0.28rem 0.55rem;
+  border: 1px solid var(--border-soft);
+  border-radius: 0.3rem;
+  background: var(--bg-elev-2);
+  color: var(--text-secondary);
+}
+
+.cb-role-imp { color: #ffcb6b; border-color: color-mix(in srgb, #ffcb6b 22%, var(--border)); }
+.cb-role-arch { color: #82aaff; border-color: color-mix(in srgb, #82aaff 22%, var(--border)); }
+.cb-role-test { color: #c3e88d; border-color: color-mix(in srgb, #c3e88d 22%, var(--border)); }
+
+.cb-wave-note {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-top: auto;
+  padding-top: 0.3rem;
+}
+
+.cb-wave-arrow {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--vue-green);
+  opacity: 0.6;
+}
+
+.cb-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  padding: 0.5rem 0.9rem;
+  border: 1px dashed color-mix(in srgb, var(--vue-green-light) 26%, var(--border));
+  border-radius: 0.5rem;
+  background: var(--bg-elev-1);
+}
+
+.cb-side-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+}
+
+.cb-side-chip {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.cb-side-chip code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+}
+
+.cb-caption {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0.2rem 0 0;
+  text-align: center;
+}
+
+.cb-em {
+  color: var(--vue-green-light);
+  font-weight: 700;
+}
+</style>
+
+<!--
+04 · Tools — claude-build deep dive. Five agents, three waves.
+
+DELIVERY:
+- "Multi-agent for IMPLEMENTATION. Five roles, three waves."
+- Walk Wave 0: "One implementer. Sets the contracts — types, interfaces, module boundaries. Everyone else waits."
+- Walk Wave 1: "Three implementers in parallel. They CAN'T collide because Wave 0 already drew the lines."
+- Walk Wave 2: "One implementer stitches it together. Architect-reviewer reads the diff against design intent. Test-writer covers the new surface."
+- Point at the dashed side band: "Orchestrator coordinates the whole thing. Researcher is on-demand."
+- Land the caption: "Wave 0 sets the contracts. Wave 1 can't collide. Wave 2 verifies."
+
+CROSS-VENDOR NOTE (speak, don't slide): "pi.dev users get the same idea with implementation-skill — single agent, sequential, same artifacts. Same JOB, different tool. The harness travels."
+
+WHY THIS LANDS: the wave pattern is the most memorable, teachable detail in the whole talk. Audience leaves knowing what "contracts-first parallelism" looks like.
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="qa-slide">
+  <div class="qa-kicker">04 · Tools — <span class="sg-step">Validate</span> · <code>claude-qa</code></div>
+
+  <div class="qa-grid">
+    <div class="qa-row qa-row-top">
+      <div class="qa-card">
+        <div class="qa-card-tag">ANALYZE</div>
+        <div class="qa-card-name">test-strategist</div>
+        <div class="qa-card-desc">Risks + priorities. What surface needs covered next.</div>
+      </div>
+      <div class="qa-card">
+        <div class="qa-card-tag">GENERATE</div>
+        <div class="qa-card-name">test-generator</div>
+        <div class="qa-card-desc">Writes Vitest coverage based on strategist&rsquo;s risk map.</div>
+      </div>
+      <div class="qa-card">
+        <div class="qa-card-tag">AUDIT</div>
+        <div class="qa-card-name">qa-auditor</div>
+        <div class="qa-card-desc">Reviews against architectural best practices and spec design.</div>
+      </div>
+    </div>
+    <div class="qa-row qa-row-bottom">
+      <div class="qa-card qa-card-time">
+        <div class="qa-card-tag">TRACK</div>
+        <div class="qa-card-name">regression-tracker</div>
+        <div class="qa-card-desc">Quality metrics over time. Trends, not snapshots.</div>
+      </div>
+      <div class="qa-card qa-card-time">
+        <div class="qa-card-tag">GAPS</div>
+        <div class="qa-card-name">mutation-analyst</div>
+        <div class="qa-card-desc">Where the tests didn&rsquo;t catch a real change.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="qa-spec">
+    <span class="qa-spec-tag">when a spec is in scope · the loop closes</span>
+    <span class="qa-spec-body"><code>qa-auditor</code> verifies the implementation against <code>design.md</code>, every <em>must-have</em> requirement is exercised, and tests trace back to the requirements that demanded them.</span>
+  </div>
+
+  <p class="qa-caption">Specialized roles, parallel verification &mdash; <span class="qa-em">anchored to the spec</span>.</p>
+</div>
+
+<style>
+.qa-slide {
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.qa-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.qa-kicker code {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+}
+
+.qa-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.qa-row {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.qa-row-top {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.qa-row-bottom {
+  grid-template-columns: 1fr 1fr;
+  max-width: 56rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.qa-card {
+  padding: 0.95rem 1.1rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 92%, var(--vue-green) 8%) 0%,
+      var(--bg-elev-1) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 4%, transparent);
+}
+
+.qa-card-time {
+  border-color: color-mix(in srgb, #c792ea 22%, var(--border));
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 92%, #c792ea 8%) 0%,
+      var(--bg-elev-1) 100%);
+}
+
+.qa-card-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+}
+
+.qa-card-time .qa-card-tag {
+  color: #c792ea;
+}
+
+.qa-card-name {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.qa-card-desc {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.qa-spec {
+  margin-top: 0.2rem;
+  padding: 0.7rem 1.1rem;
+  border: 1px solid color-mix(in srgb, var(--vue-green-light) 38%, var(--border));
+  border-radius: 0.55rem;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 82%, var(--vue-green) 18%) 0%,
+      var(--bg-elev-1) 100%);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, white 5%, transparent),
+    0 0 22px color-mix(in srgb, var(--vue-green) 14%, transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  text-align: center;
+}
+
+.qa-spec-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+}
+
+.qa-spec-body {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.qa-spec-body code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+}
+
+.qa-spec-body em {
+  color: var(--vue-green-light);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.qa-caption {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0.2rem 0 0;
+  text-align: center;
+}
+
+.qa-em {
+  color: var(--vue-green-light);
+  font-style: normal;
+  font-weight: 700;
+}
+</style>
+
+<!--
+04 · Tools — claude-qa deep dive. Five specialized auditors, anchored to the spec.
+
+DELIVERY:
+- "Multi-agent for QA. Five specialized roles, each owns a slice of verification."
+- Top row, left to right: "Strategist maps risk. Generator writes the tests. Auditor checks architecture against the design."
+- Bottom row (purple-tinted, the time dimension): "Regression-tracker watches quality across runs. Mutation-analyst finds where the tests are theater — code changed, no test caught it."
+- Point at the GREEN spec-aware band: "And this is the loop closing. When a spec is in scope, the qa-auditor doesn't just review architecture — it verifies the implementation against design.md. Every must-have requirement gets exercised. Every test traces back to a requirement that demanded it."
+- Land the caption: "Specialized roles, parallel verification — anchored to the spec."
+
+CALLBACK: this is the operational answer to S18a — "the spec is the comprehension contract." Here's where the contract actually gets checked.
+
+PAIRING NOTE: this completes the multi-agent picture across the harness. spec-gen for PLAN, claude-build for IMPLEMENT, claude-qa for VALIDATE. Three plugins, one shape — orchestrator coordinates specialists, and when there's a spec, the verification anchors back to it.
+
+NEXT: now that the audience has seen multi-agent in THREE places (spec-gen research, claude-build waves, claude-qa auditors), we land the orchestration GO/STAY rubric. Concrete before abstract.
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="moa-slide moa-slide-single">
+  <div class="moa-kicker">Orchestration · go multi-agent when&hellip;</div>
+
+  <div class="moa-col moa-go moa-col-wide">
+    <ul class="moa-list">
+      <li><span class="moa-rule">Independent lanes</span><span class="moa-note">no shared files, clean boundaries</span></li>
+      <li><span class="moa-rule">Coverage beats depth</span><span class="moa-note">many shallow passes — research, tests, audits</span></li>
+      <li><span class="moa-rule">You&rsquo;re the bottleneck</span><span class="moa-note">delegate, then review</span></li>
+      <li><span class="moa-rule">Interfaces are already clear</span><span class="moa-note">contracts let agents work without colliding</span></li>
+    </ul>
+  </div>
+
+  <div class="moa-proof">
+    <span class="moa-proof-label">you just saw this in</span>
+    <span class="moa-proof-chip"><code>spec-gen</code> · research fans out</span>
+    <span class="moa-proof-chip"><code>claude-build</code> · implementer waves</span>
+    <span class="moa-proof-chip"><code>claude-qa</code> · parallel audit</span>
+  </div>
+</div>
+
+<!--
+Orchestration · GO heuristic. After the audience has seen multi-agent in three plugins.
+
+DELIVERY:
+- "You've just seen multi-agent in three places. Here's the rubric — when does it earn its keep?"
+- Walk the four green criteria: independent lanes, coverage beats depth, you're the bottleneck, interfaces are clear.
+- Point at the dashed proof band: "All four fire in spec-gen's research, claude-build's waves, claude-qa's auditors. That's why those got multi-agent."
+- 30–45 seconds. Tee up the inverse on the next slide.
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="moa-slide moa-slide-single">
+  <div class="moa-kicker">Orchestration · stay single-agent when&hellip;</div>
+
+  <div class="moa-col moa-stay moa-col-wide">
+    <ul class="moa-list">
+      <li><span class="moa-rule">The work is sequential</span><span class="moa-note">each step depends on the last</span></li>
+      <li><span class="moa-rule">You&rsquo;re still shaping the problem</span><span class="moa-note">vague reqs, exploration, design talk</span></li>
+      <li><span class="moa-rule">It&rsquo;s a small, local change</span><span class="moa-note">one PR&rsquo;s worth — overhead won&rsquo;t pay off</span></li>
+      <li><span class="moa-rule">Needs creative coherence</span><span class="moa-note">one mind, end-to-end</span></li>
+    </ul>
+  </div>
+
+  <p class="moa-caption">When in doubt, <span class="moa-em">start single</span>. Add agents when the bottleneck moves to you.</p>
+</div>
+
+<!--
+Orchestration · STAY heuristic. Second half of the rubric.
+
+DELIVERY:
+- "And when does one agent win?"
+- Walk the four amber criteria: sequential, shaping the problem, small/local, creative coherence.
+- Land the caption SLOWLY: "When in doubt, start single. Add agents when the bottleneck moves to you."
+- 30–45 seconds. This is the takeaway. Pause before moving on.
+
+WHY THE SPLIT: the rubric is more usable when each side has room to breathe. Audience leaves with a portable heuristic.
 -->
 
 ---
@@ -2527,38 +5336,42 @@ class: '!justify-center'
 transition: fade
 ---
 
-<div class="eval-slide">
-  <div class="eval-kicker">05 · Evaluation — the loop closes</div>
-
-  <div class="eval-grid">
-    <div class="eval-card">
-      <div class="eval-num">01</div>
-      <div class="eval-name">Behavioral</div>
-      <div class="eval-tool">playwright-skill</div>
-      <div class="eval-desc">Does it do the thing? Drive the real browser. Verify the actual page state matches the spec.</div>
+<div class="pattern-slide">
+  <div class="pattern-kicker">04 · Tools — the transferable pattern</div>
+  <div class="pattern-flow">
+    <div class="pattern-node pattern-agent">
+      <div class="pattern-node-label">agent</div>
+      <div class="pattern-node-desc">sees only a summary</div>
     </div>
-    <div class="eval-card">
-      <div class="eval-num">02</div>
-      <div class="eval-name">Structural</div>
-      <div class="eval-tool">architect-reviewer</div>
-      <div class="eval-desc">Is it built the right way? A subagent reads the diff against the design doc. Flags drift.</div>
+    <div class="pattern-arrow pattern-arrow-r">→ call</div>
+    <div class="pattern-node pattern-skill">
+      <div class="pattern-node-label">skill</div>
+      <div class="pattern-node-desc">200-token summary</div>
+    </div>
+    <div class="pattern-arrow pattern-arrow-l">stores</div>
+    <div class="pattern-node pattern-cache">
+      <div class="pattern-node-label">cache</div>
+      <div class="pattern-node-desc">full state on disk</div>
     </div>
   </div>
-
-  <p class="eval-caption">Both verify the implementation against <span class="eval-em">the spec</span> — the comprehension contract.</p>
+  <div class="pattern-callout">
+    <div class="pattern-callout-arrow">↑</div>
+    <div class="pattern-callout-text"><span class="pattern-callout-key">query by name</span>, on demand</div>
+  </div>
+  <p class="pattern-caption">Compress for the agent. <span class="pattern-em">Expand on demand.</span></p>
 </div>
 
 <style>
-.eval-slide {
-  max-width: 70rem;
+.pattern-slide {
+  max-width: 80rem;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
+  gap: 1.4rem;
 }
 
-.eval-kicker {
+.pattern-kicker {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-size: 0.85rem;
   font-weight: 500;
@@ -2568,68 +5381,241 @@ transition: fade
   opacity: 0.9;
 }
 
-.eval-grid {
+.pattern-flow {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  gap: 0.85rem;
+  align-items: stretch;
 }
 
-.eval-card {
-  padding: 1.75rem 1.5rem;
+.pattern-node {
+  padding: 1.35rem 1.1rem;
   border: 1px solid var(--border);
-  border-radius: 0.75rem;
+  border-radius: 0.65rem;
   background:
     linear-gradient(180deg,
-      color-mix(in srgb, var(--bg-elev-1) 90%, var(--vue-green) 10%) 0%,
+      color-mix(in srgb, var(--bg-elev-1) 92%, var(--vue-green) 8%) 0%,
       var(--bg-elev-1) 100%);
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-  box-shadow: inset 0 1px 0 color-mix(in srgb, white 4%, transparent);
+  gap: 0.4rem;
+  align-items: center;
+  text-align: center;
 }
 
-.eval-num {
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.14em;
-  color: var(--vue-green-light);
-  opacity: 0.75;
+.pattern-skill {
+  border-color: color-mix(in srgb, var(--vue-green-light) 40%, var(--border));
+  box-shadow: 0 0 18px color-mix(in srgb, var(--vue-green) 14%, transparent);
 }
 
-.eval-name {
+.pattern-node-label {
   font-family: var(--font-display);
-  font-size: 1.85rem;
+  font-size: 1.55rem;
   font-weight: 700;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
   color: var(--text-primary);
 }
 
-.eval-tool {
+.pattern-skill .pattern-node-label { color: var(--vue-green-light); }
+
+.pattern-node-desc {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 0.85rem;
-  color: var(--vue-green-light);
-  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
 }
 
-.eval-desc {
+.pattern-arrow {
+  display: flex;
+  align-items: center;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--vue-green);
+  padding: 0 0.5rem;
+}
+
+.pattern-callout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.pattern-callout-arrow {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--vue-green);
+  opacity: 0.7;
+}
+
+.pattern-callout-text {
   font-family: var(--font-body);
   font-size: 1rem;
   color: var(--text-secondary);
-  line-height: 1.5;
-  margin-top: 0.25rem;
 }
 
-.eval-caption {
+.pattern-callout-key {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  color: var(--vue-green-light);
+  font-weight: 600;
+}
+
+.pattern-caption {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.pattern-em {
+  color: var(--vue-green-light);
+  font-weight: 700;
+}
+</style>
+
+<!--
+S22a · "The transferable pattern: compress, then expand on demand."
+
+DELIVERY:
+- "Every custom skill I build follows this shape."
+- Walk the flow: agent → skill (summary) ← stores → cache.
+- "The agent gets a short summary. The full state stays in a cache, queryable by name."
+- Land: "Compress for the agent. Expand on demand. That's how you build tools that don't blow the context window."
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="hooks-slide">
+  <div class="hooks-kicker">04 · Tools — hooks, the automatic harness</div>
+  <div class="hooks-code">
+    <div class="hooks-bar">.claude/settings.json</div>
+    <div class="hooks-body">
+      <div class="hooks-line">{</div>
+      <div class="hooks-line">&nbsp;&nbsp;<span class="hooks-key">&quot;hooks&quot;</span>: {</div>
+      <div class="hooks-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="hooks-key">&quot;PostToolUse&quot;</span>: [<span class="hooks-str">&quot;rapid-review&quot;</span>],</div>
+      <div class="hooks-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="hooks-key">&quot;Stop&quot;</span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<span class="hooks-str">&quot;rapid-review-mark&quot;</span>]</div>
+      <div class="hooks-line">&nbsp;&nbsp;}</div>
+      <div class="hooks-line">}</div>
+    </div>
+  </div>
+  <div class="hooks-effects">
+    <div class="hooks-effect">
+      <div class="hooks-effect-when">every tool call</div>
+      <div class="hooks-effect-arrow">→</div>
+      <div class="hooks-effect-what">artifact in <code>.review/</code></div>
+    </div>
+    <div class="hooks-effect">
+      <div class="hooks-effect-when">every session-end</div>
+      <div class="hooks-effect-arrow">→</div>
+      <div class="hooks-effect-what">commit-ready marker</div>
+    </div>
+  </div>
+  <p class="hooks-caption">Hooks make the harness write its own audit trail. <span class="hooks-em">I don&rsquo;t have to remember.</span></p>
+</div>
+
+<style>
+.hooks-slide {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.hooks-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.hooks-code {
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background: var(--bg-elev-1);
+  overflow: hidden;
+}
+
+.hooks-bar {
+  padding: 0.55rem 0.95rem;
+  background: var(--bg-elev-2);
+  border-bottom: 1px solid var(--border-soft);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.hooks-body {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  padding: 1rem 1.15rem;
+  color: var(--text-secondary);
+}
+
+.hooks-line { white-space: pre; }
+.hooks-key { color: var(--code-blue); }
+.hooks-str { color: var(--code-green); }
+
+.hooks-effects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.hooks-effect {
+  padding: 0.85rem 1.1rem;
+  border: 1px solid color-mix(in srgb, var(--vue-green-light) 22%, var(--border));
+  border-radius: 0.5rem;
+  background: var(--bg-elev-1);
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.hooks-effect-when {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.hooks-effect-arrow {
+  color: var(--vue-green);
+  opacity: 0.65;
+}
+
+.hooks-effect-what {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.hooks-caption {
   font-family: var(--font-display);
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--text-secondary);
-  margin: 0;
   font-style: italic;
+  margin: 0;
 }
 
-.eval-em {
+.hooks-em {
   color: var(--vue-green-light);
   font-style: normal;
   font-weight: 600;
@@ -2637,15 +5623,15 @@ transition: fade
 </style>
 
 <!--
-Evaluation lever, stop 1: the two-layer eval pattern.
+S22d · "Hooks — the automatic harness."
 
 DELIVERY:
-- "The evaluation lever is what closes the loop. It's also what answers the comprehension question."
-- Two cards: behavioral (does it work?) and structural (is it right?).
-- "Playwright verifies the page does what the spec says it should. The architect-reviewer subagent verifies the code matches the design we agreed on."
-- Land on the caption: "Both verify against the spec — the comprehension contract."
-- This is where the spec-is-the-comprehension-contract idea gets its operational payoff.
+- "Hooks are how the harness writes its own audit trail."
+- "Every tool call generates a review artifact. Every session-end marks it ready to commit."
+- "I don't have to remember; the harness remembers for me."
+- NOTE: package the actual hook scripts into harness-visualizer before the talk so the audience can grab them.
 -->
+
 
 ---
 layout: default
@@ -2796,6 +5782,8 @@ DELIVERY:
 - "BOILERPLATE — scan, sign off. LOGIC — read, but trust your tests. BLAST RADIUS — read every line. IRREVERSIBLE — read every line twice, and re-read after the agent runs."
 - "This is the frame the architect-reviewer subagent uses. This is the frame I use. This is the frame your reviewers should use."
 - Pause. Then transition to the demo.
+
+NEXT SLIDE: live cross-vendor demo setup.
 -->
 
 ---
@@ -2804,32 +5792,40 @@ class: '!justify-center text-center'
 transition: fade
 ---
 
-<div class="demo-tee-slide">
-  <div class="demo-tee-kicker">Now watch it work</div>
-
-  <h1 class="demo-tee-line">
-    <span class="demo-step">Plan</span>
-    <span class="demo-arrow">→</span>
-    <span class="demo-step">Implement</span>
-    <span class="demo-arrow">→</span>
-    <span class="demo-step">Validate</span>
-  </h1>
-
-  <p class="demo-tee-sub">One feature, added to the visualizer, end-to-end.</p>
+<div class="live-tee-slide">
+  <div class="live-kicker">now we drive it live</div>
+  <div class="live-rows">
+    <div class="live-row">
+      <div class="live-row-num">01</div>
+      <div class="live-row-stack">
+        <div class="live-row-line"><span class="live-agent">Claude Code</span><span class="live-sep">·</span><span class="live-model">Opus 4.7</span></div>
+        <div class="live-row-line live-row-mid"><span class="live-plus">+</span><span class="live-skill">playwright-skill</span></div>
+        <div class="live-row-line live-row-action"><span class="live-arrow">→</span> drives the visualizer</div>
+      </div>
+    </div>
+    <div class="live-row">
+      <div class="live-row-num">02</div>
+      <div class="live-row-stack">
+        <div class="live-row-line"><span class="live-agent">pi.dev</span><span class="live-sep">·</span><span class="live-model">GPT-5.5</span></div>
+        <div class="live-row-line live-row-mid"><span class="live-plus">+</span><span class="live-skill">playwright-skill</span></div>
+        <div class="live-row-line live-row-action"><span class="live-arrow">→</span> drives the visualizer</div>
+      </div>
+    </div>
+  </div>
+  <p class="live-caption"><span class="live-em">Same skill.</span> Two runtimes.</p>
 </div>
 
 <style>
-.demo-tee-slide {
-  max-width: 72rem;
+.live-tee-slide {
+  max-width: 76rem;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1.5rem;
 }
 
-.demo-tee-kicker {
+.live-kicker {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-size: 0.85rem;
   font-weight: 500;
@@ -2839,47 +5835,1308 @@ transition: fade
   opacity: 0.9;
 }
 
-.demo-tee-line {
+.live-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.live-row {
+  padding: 1.5rem 1.75rem;
+  border: 1px solid color-mix(in srgb, var(--vue-green-light) 30%, var(--border));
+  border-radius: 0.75rem;
+  background:
+    linear-gradient(110deg,
+      color-mix(in srgb, var(--bg-elev-1) 86%, var(--vue-green) 14%) 0%,
+      color-mix(in srgb, var(--bg-elev-1) 92%, var(--vue-blue) 8%) 100%);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 5%, transparent);
+}
+
+.live-row-num {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--vue-green-light);
+  padding: 0.4rem 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--vue-green-light) 35%, var(--border));
+  border-radius: 0.4rem;
+  background: var(--bg-elev-2);
+}
+
+.live-row-stack {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.live-row-line {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.live-agent {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.live-sep {
+  color: var(--text-faint);
+}
+
+.live-model {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.live-plus {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--vue-green);
+  font-weight: 300;
+}
+
+.live-skill {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--code-cyan);
+  padding: 0.2em 0.6em;
+  background: var(--bg-elev-2);
+  border: 1px solid color-mix(in srgb, var(--code-cyan) 22%, var(--border));
+  border-radius: 0.35em;
+}
+
+.live-arrow {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--vue-green);
+  opacity: 0.7;
+}
+
+.live-row-action {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.live-caption {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0;
+  text-align: center;
+}
+
+.live-em {
+  color: var(--vue-green-light);
+  font-weight: 700;
+}
+</style>
+
+<!--
+S25 · Live cross-vendor demo setup card. REPLACES the old "Plan → Implement → Validate" tee.
+
+DELIVERY:
+- "I'm going to spin up the app. First with Claude Code, driving with the playwright-skill."
+- "Then I'll switch to pi.dev — GPT-5.5 — same skill, drive a different part."
+- "Same skill, two runtimes. Watch what travels and what doesn't."
+
+NEXT: live moment 1 (Claude Code drives the visualizer — accordion, tabs, table view).
+-->
+
+---
+layout: default
+class: '!justify-center text-center'
+transition: fade
+---
+
+<div class="switch-slide">
+  <div class="switch-kicker">switching runtimes</div>
+  <h1 class="switch-line">
+    <span class="switch-from">Claude Code</span>
+    <span class="switch-arrow">→</span>
+    <span class="switch-to">pi.dev <span class="switch-model">· GPT-5.5</span></span>
+  </h1>
+  <p class="switch-sub">Same <span class="switch-em">playwright-skill</span>. Different agent.</p>
+</div>
+
+<style>
+.switch-slide {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.switch-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.switch-line {
   font-family: var(--font-display) !important;
-  font-size: 4rem !important;
+  font-size: 3.4rem !important;
   font-weight: 700 !important;
   margin: 0 !important;
   display: flex;
   align-items: baseline;
-  gap: 1.25rem;
+  gap: 1.5rem;
   letter-spacing: -0.02em;
-  line-height: 1 !important;
+  line-height: 1.1 !important;
 }
 
-.demo-step {
+.switch-from {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.switch-to {
   background: linear-gradient(110deg, var(--vue-green-light) 0%, var(--vue-blue) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.demo-arrow {
+.switch-model {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  -webkit-text-fill-color: var(--text-muted);
+  letter-spacing: 0.06em;
+}
+
+.switch-arrow {
   color: var(--vue-green);
   opacity: 0.6;
   font-weight: 400;
   font-size: 2.5rem;
 }
 
-.demo-tee-sub {
+.switch-sub {
   font-family: var(--font-body);
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   color: var(--text-secondary);
   margin: 0;
   font-style: italic;
 }
+
+.switch-em {
+  color: var(--vue-green-light);
+  font-style: normal;
+  font-weight: 600;
+}
 </style>
 
 <!--
-Transition slide into the demo. The tour just ended; now the levers fire in sequence.
+S25b · Runtime switch transition card. Shown between live moment 1 (Claude Code) and live moment 2 (pi.dev).
 
 DELIVERY:
-- Don't read the slide. Let it land.
-- "All four levers, in motion, on one feature."
-- Then start the demo.
-- This is the highest-energy moment of the talk so far. Earn it.
+- "Same skill. Different agent."
+- Don't read more. Switch to the running app. Demo pi.dev with the same playwright-skill.
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="recap-slide">
+  <div class="recap-kicker">what you just saw</div>
+  <div class="recap-rows">
+    <div class="recap-row">
+      <div class="recap-agent">Claude Code</div>
+      <div class="recap-sep"></div>
+      <div class="recap-action">browse · accordion · tabs · table</div>
+    </div>
+    <div class="recap-row">
+      <div class="recap-agent">pi.dev</div>
+      <div class="recap-sep"></div>
+      <div class="recap-action">open · edit markdown · save · re-render</div>
+    </div>
+  </div>
+  <p class="recap-caption">Two vendors. One harness. <span class="recap-em">Same skill, written once.</span></p>
+</div>
+
+<style>
+.recap-slide {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.recap-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.recap-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.recap-row {
+  display: grid;
+  grid-template-columns: 12rem 1px 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background: var(--bg-elev-1);
+}
+
+.recap-agent {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.recap-sep {
+  width: 1px;
+  height: 70%;
+  background: var(--border);
+}
+
+.recap-action {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 1rem;
+  color: var(--vue-green-light);
+  letter-spacing: 0.04em;
+}
+
+.recap-caption {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin: 0;
+  font-style: italic;
+}
+
+.recap-em {
+  color: var(--vue-green-light);
+  font-style: normal;
+  font-weight: 600;
+}
+</style>
+
+<!--
+S25c · Live demo recap. Lands the cross-vendor proof.
+
+DELIVERY:
+- "Two agents. One custom tool I wrote once."
+- Beat. "That's what vendor-portability buys you."
+- Then transition into the close.
+-->
+
+---
+layout: default
+class: '!justify-center text-center'
+transition: fade
+---
+
+<div class="close-1-slide">
+  <p class="close-line-1">You didn&rsquo;t read every line.</p>
+  <p class="close-line-2">You also didn&rsquo;t ship dark code.</p>
+  <p class="close-cap">That&rsquo;s the dichotomy escape.</p>
+</div>
+
+<style>
+.close-1-slide {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.close-line-1 {
+  font-family: var(--font-display);
+  font-size: 3.4rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.close-line-2 {
+  font-family: var(--font-display);
+  font-size: 3.4rem;
+  font-weight: 700;
+  background: linear-gradient(110deg, var(--vue-green-light) 0%, var(--vue-blue) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.close-cap {
+  margin-top: 1.5rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.85;
+}
+</style>
+
+<!--
+S26 · "You didn't read every line. You also didn't ship dark code." The comprehension-debt firewall punchline.
+
+DELIVERY: Land slow. Pause between the two lines. Don't rush to the next slide.
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="contract-slide">
+  <div class="contract-kicker">the comprehension contract</div>
+  <div class="contract-diagram">
+    <div class="contract-input">
+      <div class="contract-input-label">Plan</div>
+      <div class="contract-input-action">creates →</div>
+    </div>
+    <div class="contract-spec">
+      <div class="contract-spec-label">SPEC</div>
+      <div class="contract-spec-name">the artifact you understand</div>
+    </div>
+    <div class="contract-input">
+      <div class="contract-input-action">← verifies against</div>
+      <div class="contract-input-label">Eval</div>
+    </div>
+  </div>
+  <div class="contract-implement">
+    <div class="contract-impl-arrow">↑</div>
+    <div class="contract-impl-line"><span class="contract-impl-key">Implement</span> generates code <span class="contract-impl-key">against the spec</span></div>
+  </div>
+  <p class="contract-caption">You comprehend the spec. <span class="contract-em">The code, you verify.</span></p>
+</div>
+
+<style>
+.contract-slide {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.contract-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.contract-diagram {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+.contract-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.contract-input-label {
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.contract-input-action {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.contract-spec {
+  padding: 1.5rem 2.25rem;
+  border: 1px solid color-mix(in srgb, var(--vue-green-light) 45%, var(--border));
+  border-radius: 0.85rem;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 78%, var(--vue-green) 22%) 0%,
+      var(--bg-elev-1) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  box-shadow:
+    0 0 30px color-mix(in srgb, var(--vue-green) 22%, transparent),
+    inset 0 1px 0 color-mix(in srgb, white 6%, transparent);
+}
+
+.contract-spec-label {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+}
+
+.contract-spec-name {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.contract-implement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: -0.25rem;
+}
+
+.contract-impl-arrow {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--vue-green);
+  opacity: 0.65;
+}
+
+.contract-impl-line {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+}
+
+.contract-impl-key {
+  color: var(--vue-green-light);
+  font-weight: 600;
+}
+
+.contract-caption {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0.5rem 0 0;
+}
+
+.contract-em {
+  color: var(--vue-green-light);
+  font-weight: 700;
+}
+</style>
+
+<!--
+S27 · "The spec is the comprehension contract." The talk's key callback, brought back to land the close.
+
+DELIVERY:
+- "This is the move."
+- "You comprehend the spec. The code, you verify. That's how you escape the dichotomy."
+- Pause. Then the audio callback.
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="beyond-slide">
+  <div class="beyond-kicker">beyond the coding harness</div>
+
+  <div class="beyond-grid">
+    <div class="beyond-card">
+      <div class="beyond-card-tag">DEVOPS · TERMINAL</div>
+      <div class="beyond-card-name">Warp Terminal</div>
+      <div class="beyond-card-desc">AI-native shell. Pair-programming for ops, scripts, and one-off pipelines.</div>
+    </div>
+    <div class="beyond-card">
+      <div class="beyond-card-tag">INPUT · DICTATION</div>
+      <div class="beyond-card-name">Wispr Flow</div>
+      <div class="beyond-card-desc">Voice-first dictation. Faster than typing for thinking out loud.</div>
+    </div>
+    <div class="beyond-card beyond-card-emph">
+      <div class="beyond-card-tag">RESEARCH · WEB</div>
+      <div class="beyond-card-name">Perplexity</div>
+      <div class="beyond-card-desc">AI web search. Citations included. Current knowledge on tap.</div>
+    </div>
+  </div>
+
+  <p class="beyond-caption">Every layer of the workflow has a tool. <span class="beyond-em">The harness is just where they meet code.</span></p>
+</div>
+
+<style>
+.beyond-slide {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.beyond-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.beyond-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.9rem;
+}
+
+.beyond-card {
+  padding: 1.4rem 1.3rem;
+  border: 1px solid var(--border);
+  border-radius: 0.7rem;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 92%, var(--vue-green) 8%) 0%,
+      var(--bg-elev-1) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 4%, transparent);
+}
+
+.beyond-card-emph {
+  border-color: color-mix(in srgb, var(--vue-green-light) 35%, var(--border));
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, white 5%, transparent),
+    0 0 22px color-mix(in srgb, var(--vue-green) 14%, transparent);
+}
+
+.beyond-card-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.beyond-card-emph .beyond-card-tag {
+  color: var(--vue-green-light);
+}
+
+.beyond-card-name {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+}
+
+.beyond-card-desc {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.beyond-caption {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0.2rem 0 0;
+  text-align: center;
+}
+
+.beyond-em {
+  color: var(--vue-green-light);
+  font-style: normal;
+  font-weight: 600;
+}
+</style>
+
+<!--
+Beyond the coding harness — three tools I use outside the direct coding loop.
+
+DELIVERY:
+- "Quick aside before we close: tools beyond the coding harness."
+- Warp Terminal: "AI-native shell. For ops work, deploy scripts, the stuff that lives outside an editor."
+- Wispr Flow: "Voice dictation. I think faster than I type — this closes the gap."
+- Perplexity (highlighted): "AI web search with citations. Becomes the bridge to the next slide."
+- Caption: "Every layer of the workflow has a tool. The harness is just where they meet code."
+
+NEXT SLIDE: drills into Perplexity-as-agent-tool — the Sonar API integration trick.
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="px-slide">
+  <div class="px-kicker">give your agent <code>Perplexity</code></div>
+
+  <div class="px-flow">
+    <div class="px-stage px-stage-stuck">
+      <div class="px-stage-tag">01 · agent</div>
+      <div class="px-stage-name">stuck or looping</div>
+      <div class="px-stage-note">stale training data &middot; unknown lib &middot; new API</div>
+    </div>
+    <div class="px-arrow">→</div>
+    <div class="px-stage px-stage-mid">
+      <div class="px-stage-tag">02 · sonar API</div>
+      <div class="px-stage-name">web research</div>
+      <div class="px-stage-note">current knowledge &middot; cited sources</div>
+    </div>
+    <div class="px-arrow">→</div>
+    <div class="px-stage px-stage-unblocked">
+      <div class="px-stage-tag">03 · agent</div>
+      <div class="px-stage-name">unblocked</div>
+      <div class="px-stage-note">continues the task with fresh context</div>
+    </div>
+  </div>
+
+  <div class="px-endpoints">
+    <div class="px-endpoint">
+      <div class="px-endpoint-tag">SONAR</div>
+      <div class="px-endpoint-name">quick search</div>
+      <div class="px-endpoint-desc">Fast lookup. Latest web context, citations included.</div>
+    </div>
+    <div class="px-endpoint">
+      <div class="px-endpoint-tag">SONAR · REASONING</div>
+      <div class="px-endpoint-name">deeper synthesis</div>
+      <div class="px-endpoint-desc">Comparative analysis across sources. For harder questions.</div>
+    </div>
+  </div>
+
+  <p class="px-caption">The agent&rsquo;s <span class="px-em">Stack Overflow</span> &mdash; current knowledge, on demand.</p>
+</div>
+
+<style>
+.px-slide {
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.px-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.px-kicker code {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+}
+
+.px-flow {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  gap: 0.5rem;
+  align-items: stretch;
+}
+
+.px-stage {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 92%, var(--vue-green) 8%) 0%,
+      var(--bg-elev-1) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  text-align: center;
+  align-items: center;
+}
+
+.px-stage-stuck {
+  border-color: color-mix(in srgb, #f07178 26%, var(--border));
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 92%, #f07178 8%) 0%,
+      var(--bg-elev-1) 100%);
+}
+
+.px-stage-mid {
+  border-color: color-mix(in srgb, var(--vue-green-light) 38%, var(--border));
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, white 5%, transparent),
+    0 0 18px color-mix(in srgb, var(--vue-green) 14%, transparent);
+}
+
+.px-stage-unblocked {
+  border-color: color-mix(in srgb, #c3e88d 28%, var(--border));
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 92%, #c3e88d 8%) 0%,
+      var(--bg-elev-1) 100%);
+}
+
+.px-stage-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.px-stage-stuck .px-stage-tag { color: #f07178; }
+.px-stage-mid .px-stage-tag { color: var(--vue-green-light); }
+.px-stage-unblocked .px-stage-tag { color: #c3e88d; }
+
+.px-stage-name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.px-stage-note {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.px-arrow {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--vue-green);
+  opacity: 0.65;
+}
+
+.px-endpoints {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+}
+
+.px-endpoint {
+  padding: 0.85rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.55rem;
+  background: var(--bg-elev-1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.px-endpoint-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+}
+
+.px-endpoint-name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.px-endpoint-desc {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.px-caption {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0.15rem 0 0;
+  text-align: center;
+}
+
+.px-em {
+  color: var(--vue-green-light);
+  font-weight: 700;
+}
+</style>
+
+<!--
+Give your agent Perplexity — the Sonar-API-as-agent-tool trick.
+
+DELIVERY:
+- "If you take one tactical thing home from this talk, take this."
+- Walk the flow: "Agent gets stuck — looping, hallucinating a library, hitting unknown territory. Stale training data, new API, whatever. It calls Sonar. Comes back with current web knowledge and citations. Unblocks itself."
+- Walk the two endpoints: "Sonar quick search for fast lookups. Sonar Reasoning for deeper comparative work."
+- Land the caption: "The agent's Stack Overflow. Current knowledge, on demand."
+
+WHY THIS LANDS: every developer in the room has hit this loop. Giving the agent a way out is one of the highest-leverage tools you can add to your harness.
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="box-slide">
+  <div class="box-kicker">what&rsquo;s in the box</div>
+
+  <div class="box-grid">
+    <div class="box-row box-row-top">
+      <div class="box-card">
+        <div class="box-card-tag">SKILL</div>
+        <div class="box-card-name">playwright-skill</div>
+        <div class="box-card-desc">Real-browser drive for QA + demos. Cross-vendor.</div>
+      </div>
+      <div class="box-card">
+        <div class="box-card-tag">SKILL</div>
+        <div class="box-card-name">implementation-skill</div>
+        <div class="box-card-desc">Single-agent execute. Cross-vendor.</div>
+      </div>
+    </div>
+    <div class="box-row box-row-bottom">
+      <div class="box-card box-card-multi">
+        <div class="box-card-tag">PLUGIN · 4 agents</div>
+        <div class="box-card-name">spec-gen</div>
+        <div class="box-card-desc">Plan: discovery → requirements → design → tasks.</div>
+      </div>
+      <div class="box-card box-card-multi">
+        <div class="box-card-tag">PLUGIN · 5 agents</div>
+        <div class="box-card-name">claude-build</div>
+        <div class="box-card-desc">Implement: 5 agents in 3 waves.</div>
+      </div>
+      <div class="box-card box-card-multi">
+        <div class="box-card-tag">PLUGIN · 5 agents</div>
+        <div class="box-card-name">claude-qa</div>
+        <div class="box-card-desc">Validate: 5 auditors, anchored to the spec.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="box-footer">
+    <span class="box-footer-tag">PROGRESSIVE-DISCLOSURE DOCS</span>
+    <span class="box-footer-body"><code>backend/docs/conventions/</code> &middot; <code>frontend/docs/conventions/</code> &middot; <code>shared/docs/conventions/</code> &mdash; auto-authored from real evidence</span>
+  </div>
+
+  <p class="box-caption">Fork it. Point it at your project. <span class="box-em">Your harness is the layer that comes next.</span></p>
+</div>
+
+<style>
+.box-slide {
+  max-width: 84rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.box-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+}
+
+.box-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.box-row {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.box-row-top {
+  grid-template-columns: 1fr 1fr;
+}
+
+.box-row-bottom {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box-card {
+  padding: 0.85rem 1.1rem 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: 0.55rem;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 92%, var(--vue-green) 8%) 0%,
+      var(--bg-elev-1) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 4%, transparent);
+}
+
+.box-card-multi {
+  border-color: color-mix(in srgb, var(--vue-green-light) 22%, var(--border));
+}
+
+.box-card-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.85;
+}
+
+.box-card-name {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.box-card-desc {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.box-footer {
+  padding: 0.6rem 1rem;
+  border: 1px dashed color-mix(in srgb, var(--vue-green-light) 28%, var(--border));
+  border-radius: 0.5rem;
+  background: var(--bg-elev-1);
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.85rem;
+}
+
+.box-footer-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+}
+
+.box-footer-body {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.box-footer-body code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+}
+
+.box-caption {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0.2rem 0 0;
+  text-align: center;
+}
+
+.box-em {
+  color: var(--vue-green-light);
+  font-weight: 700;
+}
+</style>
+
+<!--
+What's in the box — recap of harness-visualizer contents.
+
+DELIVERY:
+- "Quick recap. When you fork harness-visualizer, here's what you get."
+- Skills first (top row): "playwright-skill — real-browser drive, works in both Claude Code and pi.dev. implementation-skill — single-agent executor, also cross-vendor."
+- Plugins next (bottom row): "spec-gen for plan, claude-build for implement, claude-qa for validate. Three plugins, the whole spec-driven loop."
+- Point at the dashed footer: "Plus the auto-authored convention docs for backend, frontend, and shared. Real path:line evidence."
+- Land the caption: "Fork it. Point it at your project. Your harness is the layer that comes next."
+
+WHY THIS LANDS: every CTA needs a "what do I actually get" — this slide is that answer in concrete form.
+-->
+
+---
+layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="build-slide">
+  <p class="build-headline">Don&rsquo;t wait for the perfect tool.</p>
+  <p class="build-sub">Build the harness for the next feature, <span class="build-em">today</span>.</p>
+  <div class="build-repos">
+    <div class="build-repo">
+      <div class="build-repo-tag">DEMO VEHICLE</div>
+      <div class="build-repo-name">harness-visualizer</div>
+      <div class="build-repo-desc">Point at any project. See its harness.</div>
+    </div>
+    <div class="build-repo">
+      <div class="build-repo-tag">REUSABLE</div>
+      <div class="build-repo-name">vue-agentic-harness</div>
+      <div class="build-repo-desc">The reusable harness for Vue 3 projects.</div>
+    </div>
+  </div>
+</div>
+
+<style>
+.build-slide {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.build-headline {
+  font-family: var(--font-display);
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+.build-sub {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.build-em {
+  background: linear-gradient(110deg, var(--vue-green-light) 0%, var(--vue-blue) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.build-repos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.build-repo {
+  padding: 1.5rem 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--vue-green-light) 30%, var(--border));
+  border-radius: 0.75rem;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--bg-elev-1) 90%, var(--vue-green) 10%) 0%,
+      var(--bg-elev-1) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white 5%, transparent);
+}
+
+.build-repo-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+}
+
+.build-repo-name {
+  font-family: var(--font-mono);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.build-repo-desc {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+}
+</style>
+
+<!--
+S29 · "Build your harness today." Empowerment + repo CTAs.
+
+DELIVERY:
+- "Don't wait for the perfect tool."
+- "Build the harness for the next feature, today."
+- "Both repos are public. Star them, fork them — tell me what your harness looks like."
+
+ASSETS: add QR codes for each repo when URLs finalize.
+-->
+
+---
+layout: default
+class: '!justify-center text-center'
+transition: fade
+---
+
+<div class="thanks-slide">
+  <div class="thanks-logo">
+    <BaLogo />
+  </div>
+  <h1 class="thanks-name">Will Marple</h1>
+  <div class="thanks-tagline">Distinguished Engineer · Black Airplane</div>
+  <p class="thanks-contact">talk@willmarple.com</p>
+  <p class="thanks-q">Questions?</p>
+</div>
+
+<style>
+.thanks-slide {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.thanks-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.thanks-name {
+  font-family: var(--font-display) !important;
+  font-size: 3.5rem !important;
+  font-weight: 700 !important;
+  color: var(--text-primary) !important;
+  margin: 0 !important;
+  letter-spacing: -0.025em;
+  line-height: 1;
+}
+
+.thanks-tagline {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+}
+
+.thanks-contact {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0.5rem 0 0;
+}
+
+.thanks-q {
+  margin-top: 2rem;
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 700;
+  background: linear-gradient(110deg, var(--vue-green-light) 0%, var(--vue-blue) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.02em;
+}
+</style>
+
+<script setup>
+import BaLogo from './components/BaLogo.vue'
+</script>
+
+<!--
+S30 · Thank you / Q&A.
+
+DELIVERY:
+- "Thank you."
+- "I'll be at the break. Find me — I want to hear what your harness looks like."
 -->

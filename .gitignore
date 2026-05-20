@@ -11,3 +11,11 @@ components.d.ts
 .playwright-skill/cache/
 .playwright-skill/sessions/
 .playwright-skill/session
+
+# Planning notes and RRL artifacts — local-only iteration noise
+.ai/
+.review/
+
+# Env files (defensive)
+.env
+.env.*
