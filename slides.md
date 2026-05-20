@@ -7059,6 +7059,138 @@ ASSETS: add QR codes for each repo when URLs finalize.
 
 ---
 layout: default
+class: '!justify-center'
+transition: fade
+---
+
+<div class="qr-slide">
+  <div class="qr-kicker">scan · fork · point at your project</div>
+
+  <div class="qr-content">
+    <div class="qr-card">
+      <img :src="'/repo-qr.png'" alt="QR code linking to the harness-visualizer GitHub repo" />
+    </div>
+    <div class="qr-info">
+      <div class="qr-tag">REPO</div>
+      <div class="qr-name">harness-visualizer</div>
+      <p class="qr-desc">Every skill, every plugin, every progressive-disclosure doc &mdash; <span class="qr-em">all of it</span>.</p>
+      <p class="qr-desc qr-desc-sub">Fork it. Point it at your project. Build your harness on top.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.qr-slide {
+  max-width: 78rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.qr-kicker {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+  opacity: 0.9;
+  text-align: center;
+}
+
+.qr-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2.75rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-card {
+  width: 22rem;
+  height: 22rem;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow:
+    0 14px 44px rgba(0, 0, 0, 0.45),
+    0 0 30px color-mix(in srgb, var(--vue-green) 18%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.qr-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-width: 32rem;
+}
+
+.qr-tag {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--vue-green-light);
+}
+
+.qr-name {
+  font-family: var(--font-mono);
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.qr-desc {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.qr-desc-sub {
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.qr-em {
+  background: linear-gradient(110deg, var(--vue-green-light) 0%, var(--vue-blue) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+</style>
+
+<!--
+QR slide · scan to fork the harness-visualizer repo.
+
+DELIVERY:
+- "If you want to actually USE any of this — here's the repo."
+- "harness-visualizer. Every skill, every plugin, every convention doc we walked through."
+- "Fork it. Point it at your project. Build your harness on top."
+- Hold the slide. Let people scan. 10-15 seconds.
+- Then advance to thanks.
+-->
+
+---
+layout: default
 class: '!justify-center text-center'
 transition: fade
 ---
@@ -7069,7 +7201,10 @@ transition: fade
   </div>
   <h1 class="thanks-name">Will Marple</h1>
   <div class="thanks-tagline">Distinguished Engineer · Black Airplane</div>
-  <p class="thanks-contact">talk@willmarple.com</p>
+  <div class="thanks-linkedin-tag">connect on linkedin</div>
+  <div class="thanks-linkedin">
+    <img :src="'/linkedin-qr.png'" alt="QR code linking to Will Marple's LinkedIn profile" />
+  </div>
   <p class="thanks-q">Questions?</p>
 </div>
 
@@ -7109,11 +7244,35 @@ transition: fade
   color: var(--vue-green-light);
 }
 
-.thanks-contact {
+.thanks-linkedin-tag {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 1rem;
-  color: var(--text-secondary);
-  margin: 0.5rem 0 0;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+}
+
+.thanks-linkedin {
+  width: 7.5rem;
+  height: 7.5rem;
+  padding: 0.4rem;
+  background: #ffffff;
+  border-radius: 0.55rem;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.45),
+    0 0 18px color-mix(in srgb, var(--vue-green) 16%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thanks-linkedin img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .thanks-q {
