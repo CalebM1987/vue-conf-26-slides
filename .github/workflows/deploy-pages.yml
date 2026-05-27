@@ -65,7 +65,7 @@ jobs:
           fi
 
       - name: Build Slidev
-        run: pnpm run build -- --base "/${{ github.event.repository.name }}/"
+        run: pnpm exec slidev build --base "/${{ github.event.repository.name }}/"
 
       - name: Add SPA fallback for refreshes
         run: cp dist/index.html dist/404.html
