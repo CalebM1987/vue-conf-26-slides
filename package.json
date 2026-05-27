@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "slidev --open --port 3035",
+    "dev": "slidev --open --base /vue-conf-26-slides/ --port 3035",
     "build": "slidev build",
     "export": "slidev export",
     "format": "slidev format"
