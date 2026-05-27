@@ -42,6 +42,28 @@ jobs:
       - name: Install Playwright browser
         run: pnpm exec playwright install --with-deps chromium
 
+      - name: Guard against root-absolute slide assets
+        run: |
+          set -euo pipefail
+
+          static_hits=$(rg -n '<(img|video)[^>]+(src|poster)="/' slides.md || true)
+          dynamic_hits=$(rg -n ":(src|poster)=['\"]\\s*['\"]/" slides.md || true)
+
+          if [ -n "$static_hits" ] || [ -n "$dynamic_hits" ]; then
+            echo "Root-absolute slide asset paths found. Use base-aware bindings instead."
+            if [ -n "$static_hits" ]; then
+              echo ""
+              echo "Static attributes:"
+              echo "$static_hits"
+            fi
+            if [ -n "$dynamic_hits" ]; then
+              echo ""
+              echo "Dynamic bindings:"
+              echo "$dynamic_hits"
+            fi
+            exit 1
+          fi
+
       - name: Build Slidev
         run: pnpm run build -- --base "/${{ github.event.repository.name }}/"
 
