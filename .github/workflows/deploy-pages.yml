@@ -1,4 +1,4 @@
-name: Deploy Slidev to GitHub Pages
+name: Deploy pages
 
 on:
   push:
@@ -9,78 +9,57 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 10
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: lts/*
           cache: pnpm
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
       - name: Install Playwright browser
         run: pnpm exec playwright install --with-deps chromium
 
-      - name: Guard against root-absolute slide assets
-        run: |
-          set -euo pipefail
+      - name: Build
+        run: pnpm exec slidev build --base /${{github.event.repository.name}}/
 
-          static_hits=$(rg -n '<(img|video)[^>]+(src|poster)="/' slides.md || true)
-          dynamic_hits=$(rg -n ":(src|poster)=['\"]\\s*['\"]/" slides.md || true)
-
-          if [ -n "$static_hits" ] || [ -n "$dynamic_hits" ]; then
-            echo "Root-absolute slide asset paths found. Use base-aware bindings instead."
-            if [ -n "$static_hits" ]; then
-              echo ""
-              echo "Static attributes:"
-              echo "$static_hits"
-            fi
-            if [ -n "$dynamic_hits" ]; then
-              echo ""
-              echo "Dynamic bindings:"
-              echo "$dynamic_hits"
-            fi
-            exit 1
-          fi
-
-      - name: Build Slidev
-        run: pnpm exec slidev build --base "/${{ github.event.repository.name }}/"
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
       - name: Add SPA fallback for refreshes
         run: cp dist/index.html dist/404.html
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
   deploy:
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

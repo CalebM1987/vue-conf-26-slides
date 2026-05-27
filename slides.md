@@ -1622,7 +1622,7 @@ transition: fade
 <div class="viz-slide">
   <div class="viz-kicker">harness-visualizer · in motion</div>
   <div class="viz-shot">
-  <img src="/screenshots/agents-expanded.png" alt="harness-visualizer showing the agents view with claude-code expanded" />
+  <img :src="`${$slidev.configs.base || '/'}screenshots/agents-expanded.png`" alt="harness-visualizer showing the agents view with claude-code expanded" />
 </div>
 </div>
 
@@ -1722,15 +1722,15 @@ clicks: 2
 
   <div class="lenses-stage">
     <div class="lens-shot" v-show="$clicks === 0">
-      <img src="/screenshots/agents-view.png" alt="Agents view" />
+      <img :src="`${$slidev.configs.base || '/'}screenshots/agents-view.png`" alt="Agents view" />
       <p class="lens-cap"><span class="lens-cap-key">Agents</span> · per-tool view: cascade pattern, token total, configured artifacts, issues.</p>
     </div>
     <div class="lens-shot" v-show="$clicks === 1">
-      <img src="/screenshots/issues-view.png" alt="Issues view" />
+      <img :src="`${$slidev.configs.base || '/'}screenshots/issues-view.png`" alt="Issues view" />
       <p class="lens-cap"><span class="lens-cap-key">Issues</span> · status flags: oversize, stale, conflict, orphan — plus token-budget warnings.</p>
     </div>
     <div class="lens-shot" v-show="$clicks === 2">
-      <img src="/screenshots/table-view.png" alt="Table view" />
+      <img :src="`${$slidev.configs.base || '/'}screenshots/table-view.png`" alt="Table view" />
       <p class="lens-cap"><span class="lens-cap-key">Table</span> · sortable inventory: every artifact, scope, path, activation, token count.</p>
     </div>
   </div>
@@ -7068,7 +7068,7 @@ transition: fade
 
   <div class="qr-content">
     <div class="qr-card">
-      <img src="/repo-qr.png" alt="QR code linking to the harness-visualizer GitHub repo" />
+      <img :src="`${$slidev.configs.base || '/'}repo-qr.png`" alt="QR code linking to the harness-visualizer GitHub repo" />
     </div>
     <div class="qr-info">
       <div class="qr-tag">REPO</div>
@@ -7203,7 +7203,7 @@ transition: fade
   <div class="thanks-tagline">Distinguished Engineer · Black Airplane</div>
   <div class="thanks-linkedin-tag">connect on linkedin</div>
   <div class="thanks-linkedin">
-    <img src="/linkedin-qr.png" alt="QR code linking to Will Marple's LinkedIn profile" />
+    <img :src="`${$slidev.configs.base || '/'}linkedin-qr.png`" alt="QR code linking to Will Marple's LinkedIn profile" />
   </div>
   <p class="thanks-q">Questions?</p>
 </div>
