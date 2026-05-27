@@ -107,7 +107,22 @@ harness-visualizer/
 
 > "Files on disk. Nothing magic. **You can see all of it.**"
 
-The demo vehicle was **harness-visualizer** — a Vue 3 app that reads a project's harness and surfaces it as a visual dashboard:
+### Harness Visualizer Demo
+
+The demo vehicle was **harness-visualizer** — a Vue 3 app that reads a project's harness and surfaces it as a visual dashboard. The repo for this project can be found here:
+
+[https://github.com/willmarple/harness-visualizer](https://github.com/willmarple/harness-visualizer)
+
+> Note: if you clone this repo and try to run the visualizer, it may throw an error saying it can't find the `@harness-visulizer/shared` package. This is because that package is a local dependency that's not published to npm and therefore requires the `dist` folder to be built locally. To get around this, run the following commands from the root directory:
+>
+> ```bash
+> cd shared
+> npm run build
+> # Then go back to the root and run the visualizer
+> cd ..
+> npm run dev
+> ```
+
 
 ![harness-visualizer showing the agents view expanded](public/screenshots/agents-expanded.png)
 
@@ -121,6 +136,8 @@ The demo vehicle was **harness-visualizer** — a Vue 3 app that reads a project
 
 ![Table view](public/screenshots/table-view.png)
 *Table view: sortable inventory of every artifact, scope, path, activation, token count*
+
+> Note: 
 
 ---
 
